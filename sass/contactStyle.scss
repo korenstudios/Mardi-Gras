@@ -1,0 +1,554 @@
+@import "setup";
+@import "navigator";
+@import "footer";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --successColor: #2ecc72;
+    --errorColor: #e74e33;
+}
+
+section.container {
+    margin-top: 110px;
+    color: $Dcolor;
+    margin-bottom: 50px;
+
+}
+
+section h2 {
+    font-family: $HeadingfontP;
+    text-align: center;
+    color: goldenrod;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-family: $HeadingfontP;
+    color: #800000;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-family: $TextfontR;
+}
+
+a[href^='mailto'] {
+    color: $Dcolor;
+    font-weight: bold;
+}
+
+a[href^='mailto']:hover {
+    color: yellowgreen;
+}
+
+form:first-child {
+    padding: 30px 40px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.usern-input,
+.userl-input,
+.usere-input,
+.usermsg-input {
+    margin-top: 25px;
+}
+
+input:focus {
+    background-color: rgba(211, 211, 211, 0.8);
+}
+
+.usermsg {
+    width: 500px;
+    height: 250px;
+    resize: none;
+}
+
+.usermsg:focus {
+    @extend input:focus;
+}
+
+.res-btn {
+    overflow: hidden;
+}
+
+.res-btn .resetme {
+    float: right;
+    clear: both;
+}
+
+span.bi-question-circle-fill {
+    position: relative;
+    top: 7px;
+    font-size: 2rem;
+    cursor: help;
+    color: dimgrey;
+}
+
+small.bi-exclamation-circle-fill {
+    position: relative;
+    top: 7px;
+    font-size: 1.5rem;
+    color: var(--errorColor);
+}
+
+small.bi-check-circle-fill {
+    @extend .bi-exclamation-circle-fill;
+    color: var(--successColor);
+}
+
+::placeholder {
+    font-family: $TextfontR;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.usern-input .usern::placeholder {
+    color: $Pcolor;
+}
+
+.userl-input .userl::placeholder {
+    color: $Ycolor;
+}
+
+
+.usere-input .usere::placeholder {
+    color: $Gcolor;
+}
+
+.usermsg-input .usermsg::placeholder {
+    color: royalblue;
+}
+
+.invalid-msg {
+    position: relative;
+    top: 6px;
+    left: 5px;
+    font-family: $TextfontR;
+    color: var(--errorColor);
+}
+
+input[type=button] {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    width: 50%;
+    background-color: #b20000;
+    border: 2px solid#b20000;
+    text-transform: uppercase;
+    font-family: $TextfontR;
+    font-weight: bold;
+    border-radius: 5px;
+    color: $Lcolor;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+input[type=button]:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type=reset] {
+    background-color: #b20000;
+    border: 2px solid#b20000;
+    text-transform: capitalize;
+    font-family: $TextfontR;
+    font-weight: bold;
+    border-radius: 5px;
+    color: $Lcolor;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+input[type=reset]:hover {
+    @extend input[type=button]:hover;
+}
+
+@media (max-width: 1199.98px) {
+
+    .content-usern,
+    .content-usermsg {
+        display: none;
+    }
+
+    ::placeholder {
+        visibility: visible;
+    }
+
+    span.bi-question-circle-fill {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    input[type=button] {
+        width: auto;
+    }
+
+    iframe {
+        width: 75vw !important;
+    }
+}
+
+@media (max-width: 400.98px) {
+    .containher .box .nola-content h4 {
+        font-size: 0.655rem !important;
+    }
+}
+
+@media (max-width: 280.98px) {
+    .invalid-msg {
+        position: relative;
+        top: 7px;
+        left: -10px !important;
+        font-size: 0.8rem;
+    }
+
+    small.bi-exclamation-circle-fill {
+        position: relative;
+        top: 7px;
+        right: 12px;
+    }
+
+    iframe {
+        position: relative;
+        right: 15px;
+    }
+
+    input[type=button] {
+        position: relative;
+        right: 10px;
+    }
+
+    .containher .box .nola-content h3 {
+        font-size: 1.35rem !important;
+    }
+
+    .containher .box .nola-content h4 {
+        font-size: 0.5rem !important;
+    }
+
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    width: 80vw;
+    height: 60vh;
+}
+
+.contact-nola {
+    margin-top: 40px;
+}
+
+.contact-nola .sub1-head {
+    margin-bottom: 20px;
+}
+
+.contact-nola .sub2-head {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.nola-social p:first-child {
+    font-family: $TextfontR;
+    color: #4267B2;
+}
+
+.nola-social p:nth-child(2) {
+    font-family: $TextfontR;
+    color: #8a3ab9;
+}
+
+.nola-social p:last-child {
+    font-family: $TextfontR;
+    color: #1DA1F2;
+}
+
+.nola-social p a {
+    color: $Dcolor;
+    font-weight: 500;
+    font-family: $TextfontR;
+}
+
+.nola-social p a:hover {
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+.containher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.containher .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background-color: white;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.containher .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: scale(1) translateY(0);
+}
+
+.containher .box:hover .imgBx {
+    transform: scale(1) translateY(-100%);
+}
+
+.containher .box .imgBx img[src~='nola'] {
+    max-width: 100px;
+}
+
+.containher .box .nola-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    background-color: $Pcolor;
+    transform: scale(1) translateY(calc(100% - 5px));
+}
+
+.containher .box:hover .nola-content {
+    transform: scale(1);
+}
+
+.containher .box:nth-child(2) .nola-content {
+    background-color: $Ycolor;
+}
+
+.containher .box:nth-child(3) .nola-content {
+    background-color: $Gcolor;
+}
+
+.containher .box .nola-content .nola-icon img[src~='nola'] {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.containher .box .nola-content h3 {
+    color: $Lcolor;
+    font-family: $HeadingfontP;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.containher .box .nola-content h4 {
+    color: $Lcolor;
+    font-family: $TextfontR;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+// Name Input Style
+
+.usern-input {
+    width: 98.4%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.usern-input .usern {
+    width: 100%;
+    height: 100%;
+    color: $Dcolor;
+    padding-top: 20px;
+    border: none;
+    outline: 0;
+}
+
+.usern-input .label-usern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.usern-input .label-usern::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid $Pcolor;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-usern {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.usern-input .usern:focus+.label-usern .content-usern,
+.usern-input .usern:valid+.label-usern .content-usern {
+    transform: translateY(-100%);
+    font-size: 0.875rem;
+    color: $Pcolor;
+}
+
+.usern-input .usern:focus+.label-usern::after,
+.usern-input .usern:valid+.label-usern::after {
+    transform: translateX(0);
+}
+
+// Last Name Input Style
+
+.userl-input {
+    @extend .usern-input;
+}
+
+.userl-input .userl {
+    @extend .usern;
+}
+
+.userl-input .label-userl {
+    @extend .label-usern;
+}
+
+.userl-input .label-userl::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid $Ycolor;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-userl {
+    @extend .content-usern;
+}
+
+.userl-input .userl:focus+.label-userl .content-userl,
+.userl-input .userl:valid+.label-userl .content-userl {
+    transform: translateY(-100%);
+    font-size: 0.875rem;
+    color: $Ycolor;
+}
+
+// Email Input Style
+
+.usere-input {
+    @extend .usern-input;
+}
+
+.usere-input .usere {
+    @extend .usern;
+}
+
+.usere-input .label-usere {
+    @extend .label-usern;
+}
+
+.usere-input .label-usere::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid $Gcolor;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-usere {
+    @extend .content-usern;
+}
+
+.usere-input .usere:focus+.label-usere .content-usere,
+.usere-input .usere:valid+.label-usere .content-usere {
+    transform: translateY(-100%);
+    font-size: 0.875rem;
+    color: $Gcolor;
+}
+
+// Message Textarea Style
+
+.usermsg-input {
+    @extend .usern-input;
+    height: 50vh;
+}
+
+.usermsg-input .usermsg {
+    @extend .usern;
+    line-height: 1.5;
+}
+
+.usermsg-input .label-usermsg {
+    @extend .label-usern;
+}
+
+
+.usermsg-input .label-usermsg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid royalblue;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-usermsg {
+    position: absolute;
+    bottom: 335px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.usermsg-input .usermsg:focus+.label-usermsg .content-usermsg,
+.usermsg-input .usermsg:valid+.label-usermsg .content-usermsg {
+    transform: translateY(-100%);
+    font-size: 0.875rem;
+    color: royalblue;
+}

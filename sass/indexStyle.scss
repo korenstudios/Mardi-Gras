@@ -1,0 +1,109 @@
+@import "setup";
+@import "slider";
+@import "cards";
+@import "navigator";
+@import "footer";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.main-content {
+    background-color: beige;
+    font-family: $TextfontR;
+    line-height: 1.5;
+    text-align: justify;
+    color: gray;
+}
+
+div.main-content1 {
+    border-right: $Ycolor dashed 2px;
+}
+
+div.main-content1 p {
+    border-bottom: 3px dotted $Gcolor;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+div.main-content1 p:last-child {
+    border: none;
+}
+
+div.main-content2 p {
+    border-bottom: 3px dotted $Pcolor;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+div.main-content2 p:last-child {
+    border: none;
+}
+
+@media (max-width: 767.98px) {
+    div.main-content1 {
+        border: hidden;
+        border-bottom: $Ycolor dashed 2px;
+    }
+
+    div.main-content2 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 376.98px) {
+    div.main-sub {
+        font-size: 2rem !important;
+    }
+}
+
+div.main-sub {
+    text-align: center;
+    font-family: $HeadingfontP;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cg1 {
+    animation: maingreen 1s infinite alternate;
+}
+
+.cg2 {
+    animation: mainyellow 1s infinite alternate;
+}
+
+.cg3 {
+    animation: mainpurple 1s infinite alternate;
+}
+
+@keyframes maingreen {
+    from {
+        color: $Dcolor;
+    }
+
+    to {
+        color: $Gcolor;
+    }
+}
+
+@keyframes mainyellow {
+    from {
+        color: $Dcolor;
+    }
+
+    to {
+        color: $Ycolor;
+    }
+}
+
+@keyframes mainpurple {
+    from {
+        color: $Dcolor;
+    }
+
+    to {
+        color: $Pcolor;
+    }
+}

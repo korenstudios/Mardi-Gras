@@ -1,0 +1,2325 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+header.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background-color: #9453A6;
+  font-family: "Henny Penny", cursive;
+}
+
+.logo {
+  color: #F2CC0F;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 90px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.logo:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #F2F2F2;
+  border: 2px #F2CC0F solid;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  display: inline-block;
+  -webkit-transition: color .15s ease-in-out,
+ background-color .15s ease-in-out,
+ border-color .15s ease-in-out,
+ -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,
+ background-color .15s ease-in-out,
+ border-color .15s ease-in-out,
+ -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,
+ background-color .15s ease-in-out,
+ border-color .15s ease-in-out,
+ box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,
+ background-color .15s ease-in-out,
+ border-color .15s ease-in-out,
+ box-shadow .15s ease-in-out,
+ -webkit-box-shadow .15s ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #F2CC0F;
+  color: #F2F2F2;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  border: 2px solid #0D0D0D;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  -webkit-transition: color .15s ease-in-out,
+ background-color .15s ease-in-out,
+ border-color .15s ease-in-out,
+ -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,
+ background-color .15s ease-in-out,
+ border-color .15s ease-in-out,
+ -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,
+ background-color .15s ease-in-out,
+ border-color .15s ease-in-out,
+ box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,
+ background-color .15s ease-in-out,
+ border-color .15s ease-in-out,
+ box-shadow .15s ease-in-out,
+ -webkit-box-shadow .15s ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.hamburger:hover {
+  background-color: #0D0D0D;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #F2F2F2;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1199.98px) {
+  .nav-links {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    margin-top: 4.4vh;
+    background-color: #8CBF3F;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100.5%);
+            transform: translateX(100.5%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 575.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 7.8vh;
+    margin-top: 4.4vh;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 450.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    margin-top: 3vh;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 420.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 9.2vh;
+    margin-top: 3vh;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 412.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 9.2vh;
+    margin-top: 1.5vh;
+  }
+  .logo img {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 380.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    margin-top: 5.6vh;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 376.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    margin-top: 3vh;
+  }
+  .logo img {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 360.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 6.5vh;
+    margin-top: 6vh;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 350.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    margin-top: 7.5vh;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 321.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 98vh;
+    top: 8vh;
+    margin-top: 5.5vh;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 300.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    margin-top: 5.5vh;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 280.98px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 96vh;
+    top: 8vh;
+    margin-top: 5.5vh;
+  }
+  .nav-links a {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nav-links li {
+    opacity: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+:root {
+  --successColor: #2ecc72;
+  --errorColor: #e74e33;
+}
+
+footer {
+  background-color: #F2CC0F;
+}
+
+footer a {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+
+.footer-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: darkgray;
+  font-size: 1.125rem;
+  padding: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #F2F2F2;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  background-color: #b20000;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+.footer-links a:hover:after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+@media (max-width: 768.98px) {
+  div.out-line {
+    line-height: 7.5 !important;
+  }
+  #quiz-popup .quiz-content {
+    margin-top: 1000px !important;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=reset] {
+    top: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  div.out-line {
+    line-height: 4.5 !important;
+  }
+  #quiz-popup .quiz-content {
+    margin-top: 1450px !important;
+  }
+  #quiz-popup .quiz-content .quiz-header {
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=reset] {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    top: 5px !important;
+    right: 65px !important;
+  }
+  .central-f-logo {
+    text-align: center;
+  }
+}
+
+div.out-line {
+  background-color: #8CBF3F;
+  text-align: center;
+  height: 8vh;
+  line-height: 5.5;
+  font-size: 0.7rem;
+  color: gray;
+  font-weight: bold;
+  font-family: Tahoma;
+}
+
+footer hr {
+  color: ivory;
+}
+
+footer a img[alt='Footer_Logo'] {
+  margin-top: 5px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+footer a img[alt='Footer_Logo']:hover {
+  -webkit-transform: rotateZ(5deg);
+          transform: rotateZ(5deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.newsletter, .quiz {
+  margin-top: 20px;
+}
+
+.newsletter .newsletter-btn, .quiz .newsletter-btn {
+  display: block;
+  margin: auto;
+  background-color: #b20000;
+  border: 2px solid #b20000;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F2F2F2;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  letter-spacing: 2px;
+}
+
+.newsletter .newsletter-btn:hover, .quiz .newsletter-btn:hover, .quiz .quiz-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 4px;
+}
+
+#newsletter-popup {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1500;
+  background-color: beige;
+  width: 450px;
+  padding: 80px 50px 50px;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5), 0 0 0 3000px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5), 0 0 0 3000px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+}
+
+#newsletter-popup.active {
+  visibility: visible;
+  top: 50%;
+}
+
+#newsletter-popup .newsletter-content {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#newsletter-popup .newsletter-content img[src~='newsletter'] {
+  max-width: 80px;
+}
+
+#newsletter-popup .newsletter-content h3 {
+  font-size: 1.5rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 500;
+  color: #0D0D0D;
+  margin: 20px 0 10px;
+}
+
+.cg1 {
+  -webkit-animation: maingreen 1s infinite alternate;
+          animation: maingreen 1s infinite alternate;
+}
+
+.cg2 {
+  -webkit-animation: mainyellow 1s infinite alternate;
+          animation: mainyellow 1s infinite alternate;
+}
+
+.cg3 {
+  -webkit-animation: mainpurple 1s infinite alternate;
+          animation: mainpurple 1s infinite alternate;
+}
+
+@-webkit-keyframes maingreen {
+  from {
+    color: #0D0D0D;
+  }
+  to {
+    color: #8CBF3F;
+  }
+}
+
+@keyframes maingreen {
+  from {
+    color: #0D0D0D;
+  }
+  to {
+    color: #8CBF3F;
+  }
+}
+
+@-webkit-keyframes mainyellow {
+  from {
+    color: #0D0D0D;
+  }
+  to {
+    color: #F2CC0F;
+  }
+}
+
+@keyframes mainyellow {
+  from {
+    color: #0D0D0D;
+  }
+  to {
+    color: #F2CC0F;
+  }
+}
+
+@-webkit-keyframes mainpurple {
+  from {
+    color: #0D0D0D;
+  }
+  to {
+    color: #9453A6;
+  }
+}
+
+@keyframes mainpurple {
+  from {
+    color: #0D0D0D;
+  }
+  to {
+    color: #9453A6;
+  }
+}
+
+#newsletter-popup .newsletter-content .inputEmail {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#newsletter-popup .newsletter-content .inputEmail input[type=email], #newsletter-popup .newsletter-content .inputEmail input[type=submit] {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  outline: none;
+  font-size: 1.125rem;
+}
+
+#newsletter-popup .newsletter-content .inputEmail input[type=submit] {
+  max-width: 150px;
+  display: block;
+  margin: auto;
+  background-color: #b20000;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F2F2F2;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  letter-spacing: 2px;
+}
+
+#newsletter-popup .newsletter-content .inputEmail input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 4px;
+}
+
+#newsletter-popup .newsletter-content .inputEmail input[type=email]::-webkit-input-placeholder, #newsletter-popup .newsletter-content .inputEmail input[type=submit]::-webkit-input-placeholder {
+  visibility: visible;
+  font-weight: normal;
+}
+
+#newsletter-popup .newsletter-content .inputEmail input[type=email]:-ms-input-placeholder, #newsletter-popup .newsletter-content .inputEmail input[type=submit]:-ms-input-placeholder {
+  visibility: visible;
+  font-weight: normal;
+}
+
+#newsletter-popup .newsletter-content .inputEmail input[type=email]::-ms-input-placeholder, #newsletter-popup .newsletter-content .inputEmail input[type=submit]::-ms-input-placeholder {
+  visibility: visible;
+  font-weight: normal;
+}
+
+#newsletter-popup .newsletter-content .inputEmail input[type=email]::placeholder, #newsletter-popup .newsletter-content .inputEmail input[type=submit]::placeholder {
+  visibility: visible;
+  font-weight: normal;
+}
+
+.close-btn, .close-btn2 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform opacity 0.3s ease-in-out;
+  transition: -webkit-transform opacity 0.3s ease-in-out;
+  transition: transform opacity 0.3s ease-in-out;
+  transition: transform opacity 0.3s ease-in-out, -webkit-transform opacity 0.3s ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.close-btn:hover, .close-btn2:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#my-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5000;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#my-canvas.active {
+  visibility: visible;
+}
+
+.quiz-btn {
+  margin-left: 5px;
+  display: block;
+  margin: auto;
+  background-color: #b20000;
+  border: 2px solid #b20000;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F2F2F2;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  letter-spacing: 2px;
+}
+
+#quiz-popup {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  width: 102vw;
+  height: 102vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1500;
+  background-color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  overflow: auto;
+}
+
+#quiz-popup.active {
+  visibility: visible;
+  top: 50%;
+}
+
+#quiz-popup .quiz-content {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1250px;
+}
+
+#quiz-popup .quiz-content h3 {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 500;
+  color: #0D0D0D;
+}
+
+#quiz-popup .quiz-content p {
+  text-align: center;
+  color: #0D0D0D;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+#quiz-popup .quiz-content .quiz-header {
+  border-bottom: 2px dashed #b20000;
+  text-align: center;
+}
+
+#quiz-popup .quiz-content .quiz-header p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#quiz-form {
+  margin-top: 20px;
+}
+
+#quiz-popup .quiz-content #quiz-form h3 {
+  font-family: "Henny Penny", cursive;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+#quiz-popup .quiz-content #quiz-form .answer-box {
+  margin-left: 55px;
+}
+
+#quiz-popup .quiz-content #quiz-form span {
+  font-family: "Roboto", sans-serif;
+}
+
+.quiz-score {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #b20000;
+  font-weight: bold;
+}
+
+#quiz-popup .quiz-content #quiz-form input[type=submit] {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 50%;
+  background-color: #b20000;
+  border: 2px solid #b20000;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F2F2F2;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#quiz-popup .quiz-content #quiz-form input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#quiz-popup .quiz-content #quiz-form input[type=reset] {
+  background-color: #b20000;
+  border: 2px solid #b20000;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F2F2F2;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  top: -25px;
+  right: 80px;
+  cursor: pointer;
+}
+
+#quiz-popup .quiz-content #quiz-form input[type=reset]:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-icons {
+  text-align: right;
+}
+
+.footer-icons button {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  font-size: 25px;
+  color: #0D0D0D;
+  z-index: 1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 500.98px) {
+  .footer-icons button {
+    width: 65px;
+    height: 65px;
+    line-height: 50px;
+    font-size: 35px;
+  }
+  .footer-links a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-links a::after {
+    width: 40vw;
+    margin-left: 95px;
+    bottom: -5px;
+  }
+  .newsletter .newsletter-btn, .quiz .newsletter-btn {
+    font-size: 1rem;
+  }
+  .quiz-btn {
+    font-size: 1rem;
+  }
+}
+
+.footer-icons button::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #ccc;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.footer-icons button::after {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.footer-icons button:hover:before {
+  left: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.footer-icons button:hover::after {
+  right: 0;
+}
+
+.footer-icons button:first-child::before {
+  background-color: #1877F2;
+}
+
+.footer-icons button:nth-child(2):before {
+  background-color: #1DA1F2;
+}
+
+.footer-icons button:nth-child(3)::before {
+  background-color: #B3297A;
+}
+
+.footer-icons button:last-child::before {
+  background-color: #CD201F;
+}
+
+.footer-icons button .bi {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.footer-icons button:hover .bi {
+  color: #F2F2F2;
+}
+
+.footer-imgs {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-imgs a img {
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 5px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.footer-imgs a img:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (max-width: 1199.98px) {
+  .footer-imgs a img {
+    margin-bottom: 10px;
+  }
+  div.out-line {
+    line-height: 10.5;
+  }
+  #newsletter-popup {
+    width: 90vw;
+    height: 80vh;
+  }
+  #quiz-popup .quiz-content {
+    margin-top: 600px;
+  }
+  .quiz-score {
+    margin-left: 25px;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=reset] {
+    top: 0;
+  }
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  font-size: 2rem;
+  color: darkgray;
+  background-color: mintcream;
+  border: 2px solid #0D0D0D;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.btn-top.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.btn-top:hover {
+  background-color: #0D0D0D;
+  color: #F2F2F2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 400.98px) {
+  #newsletter-popup .newsletter-content h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 420.98px) {
+  #quiz-popup .quiz-content {
+    margin-top: 1600px !important;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=reset] {
+    left: 0;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=submit] {
+    width: 80vw;
+  }
+  .footer-links a::after {
+    width: 35vw;
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 376.98px) {
+  #quiz-popup .quiz-content {
+    margin-top: 1700px !important;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=reset] {
+    left: -5px !important;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .footer-links a::after {
+    width: 35vw;
+    margin-left: 110px;
+  }
+}
+
+@media (max-width: 361.98px) {
+  #quiz-popup .quiz-content {
+    margin-top: 1750px !important;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=reset] {
+    left: -15px !important;
+  }
+  .footer-links a::after {
+    width: 40vw;
+    margin-left: 95px;
+  }
+}
+
+@media (max-width: 321.98px) {
+  #quiz-popup .quiz-content {
+    margin-top: 1850px !important;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=reset] {
+    top: -10px !important;
+    left: 10px !important;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=submit] {
+    margin-bottom: 40px;
+  }
+  .close-btn2 {
+    top: 40px;
+    right: 30px;
+  }
+  #quiz-popup {
+    width: 112vw;
+    height: 110vh;
+  }
+  .footer-links a::after {
+    width: 40vw;
+    margin-left: 85px;
+  }
+}
+
+@media (max-width: 280.98px) {
+  .btn-top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    right: 15px;
+    bottom: 35px;
+  }
+  .footer-imgs a img {
+    width: 250px;
+  }
+  #newsletter-popup .newsletter-content h3 {
+    font-size: 0.95rem !important;
+  }
+  #quiz-popup .quiz-content .quiz-header {
+    margin-top: 50px;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=reset] {
+    top: 40px !important;
+    left: 5px !important;
+  }
+  #quiz-popup .quiz-content #quiz-form input[type=submit] {
+    margin-bottom: 50px;
+  }
+  #quiz-popup {
+    width: 110vw;
+    height: 110vh;
+  }
+  #quiz-popup .quiz-content {
+    margin-bottom: -80px;
+  }
+  .close-btn2 {
+    top: 40px !important;
+    right: 20px !important;
+  }
+  .footer-icons button {
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+  }
+  .footer-links a::after {
+    width: 50vw !important;
+    margin-left: 60px !important;
+  }
+  .newsletter .newsletter-btn, .quiz .newsletter-btn {
+    font-size: 0.8rem;
+  }
+  .quiz-btn {
+    font-size: 0.8rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --successColor: #2ecc72;
+  --errorColor: #e74e33;
+}
+
+section.container {
+  margin-top: 110px;
+  color: #0D0D0D;
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-family: "Pattaya", sans-serif;
+  text-align: center;
+  color: goldenrod;
+  margin-bottom: 20px;
+}
+
+section h3 {
+  font-family: "Pattaya", sans-serif;
+  color: #800000;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-family: "Roboto", sans-serif;
+}
+
+a[href^='mailto'] {
+  color: #0D0D0D;
+  font-weight: bold;
+}
+
+a[href^='mailto']:hover {
+  color: yellowgreen;
+}
+
+form:first-child {
+  padding: 30px 40px;
+  background-color: beige;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.usern-input, .userl-input, .usere-input, .usermsg-input,
+.userl-input,
+.usere-input,
+.usermsg-input {
+  margin-top: 25px;
+}
+
+input:focus, .usermsg:focus {
+  background-color: rgba(211, 211, 211, 0.8);
+}
+
+.usermsg {
+  width: 500px;
+  height: 250px;
+  resize: none;
+}
+
+.res-btn {
+  overflow: hidden;
+}
+
+.res-btn .resetme {
+  float: right;
+  clear: both;
+}
+
+span.bi-question-circle-fill {
+  position: relative;
+  top: 7px;
+  font-size: 2rem;
+  cursor: help;
+  color: dimgrey;
+}
+
+small.bi-exclamation-circle-fill, small.bi-check-circle-fill {
+  position: relative;
+  top: 7px;
+  font-size: 1.5rem;
+  color: var(--errorColor);
+}
+
+small.bi-check-circle-fill {
+  color: var(--successColor);
+}
+
+::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+.usern-input .usern::-webkit-input-placeholder, .userl-input .usern::-webkit-input-placeholder, .usere-input .usern::-webkit-input-placeholder, .usermsg-input .usern::-webkit-input-placeholder, .userl-input .userl::-webkit-input-placeholder, .usere-input .usere::-webkit-input-placeholder, .usermsg-input .usermsg::-webkit-input-placeholder {
+  color: #9453A6;
+}
+
+.usern-input .usern:-ms-input-placeholder, .userl-input .usern:-ms-input-placeholder, .usere-input .usern:-ms-input-placeholder, .usermsg-input .usern:-ms-input-placeholder, .userl-input .userl:-ms-input-placeholder, .usere-input .usere:-ms-input-placeholder, .usermsg-input .usermsg:-ms-input-placeholder {
+  color: #9453A6;
+}
+
+.usern-input .usern::-ms-input-placeholder, .userl-input .usern::-ms-input-placeholder, .usere-input .usern::-ms-input-placeholder, .usermsg-input .usern::-ms-input-placeholder, .userl-input .userl::-ms-input-placeholder, .usere-input .usere::-ms-input-placeholder, .usermsg-input .usermsg::-ms-input-placeholder {
+  color: #9453A6;
+}
+
+.usern-input .usern::placeholder, .userl-input .usern::placeholder, .usere-input .usern::placeholder, .usermsg-input .usern::placeholder, .userl-input .userl::placeholder, .usere-input .usere::placeholder, .usermsg-input .usermsg::placeholder {
+  color: #9453A6;
+}
+
+.userl-input .userl::-webkit-input-placeholder {
+  color: #F2CC0F;
+}
+
+.userl-input .userl:-ms-input-placeholder {
+  color: #F2CC0F;
+}
+
+.userl-input .userl::-ms-input-placeholder {
+  color: #F2CC0F;
+}
+
+.userl-input .userl::placeholder {
+  color: #F2CC0F;
+}
+
+.usere-input .usere::-webkit-input-placeholder {
+  color: #8CBF3F;
+}
+
+.usere-input .usere:-ms-input-placeholder {
+  color: #8CBF3F;
+}
+
+.usere-input .usere::-ms-input-placeholder {
+  color: #8CBF3F;
+}
+
+.usere-input .usere::placeholder {
+  color: #8CBF3F;
+}
+
+.usermsg-input .usermsg::-webkit-input-placeholder {
+  color: royalblue;
+}
+
+.usermsg-input .usermsg:-ms-input-placeholder {
+  color: royalblue;
+}
+
+.usermsg-input .usermsg::-ms-input-placeholder {
+  color: royalblue;
+}
+
+.usermsg-input .usermsg::placeholder {
+  color: royalblue;
+}
+
+.invalid-msg {
+  position: relative;
+  top: 6px;
+  left: 5px;
+  font-family: "Roboto", sans-serif;
+  color: var(--errorColor);
+}
+
+input[type=button] {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  width: 50%;
+  background-color: #b20000;
+  border: 2px solid #b20000;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F2F2F2;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+input[type=button]:hover, input[type=reset]:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+input[type=reset] {
+  background-color: #b20000;
+  border: 2px solid #b20000;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F2F2F2;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+@media (max-width: 1199.98px) {
+  .content-usern, .content-userl, .content-usere,
+  .content-usermsg {
+    display: none;
+  }
+  ::-webkit-input-placeholder {
+    visibility: visible;
+  }
+  :-ms-input-placeholder {
+    visibility: visible;
+  }
+  ::-ms-input-placeholder {
+    visibility: visible;
+  }
+  ::placeholder {
+    visibility: visible;
+  }
+  span.bi-question-circle-fill {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  input[type=button] {
+    width: auto;
+  }
+  iframe {
+    width: 75vw !important;
+  }
+}
+
+@media (max-width: 400.98px) {
+  .containher .box .nola-content h4 {
+    font-size: 0.655rem !important;
+  }
+}
+
+@media (max-width: 280.98px) {
+  .invalid-msg {
+    position: relative;
+    top: 7px;
+    left: -10px !important;
+    font-size: 0.8rem;
+  }
+  small.bi-exclamation-circle-fill, small.bi-check-circle-fill {
+    position: relative;
+    top: 7px;
+    right: 12px;
+  }
+  iframe {
+    position: relative;
+    right: 15px;
+  }
+  input[type=button] {
+    position: relative;
+    right: 10px;
+  }
+  .containher .box .nola-content h3 {
+    font-size: 1.35rem !important;
+  }
+  .containher .box .nola-content h4 {
+    font-size: 0.5rem !important;
+  }
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  width: 80vw;
+  height: 60vh;
+}
+
+.contact-nola {
+  margin-top: 40px;
+}
+
+.contact-nola .sub1-head {
+  margin-bottom: 20px;
+}
+
+.contact-nola .sub2-head {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.nola-social p:first-child {
+  font-family: "Roboto", sans-serif;
+  color: #4267B2;
+}
+
+.nola-social p:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  color: #8a3ab9;
+}
+
+.nola-social p:last-child {
+  font-family: "Roboto", sans-serif;
+  color: #1DA1F2;
+}
+
+.nola-social p a {
+  color: #0D0D0D;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.nola-social p a:hover {
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+.containher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.containher .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  background-color: white;
+  -webkit-box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.containher .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+}
+
+.containher .box:hover .imgBx {
+  -webkit-transform: scale(1) translateY(-100%);
+          transform: scale(1) translateY(-100%);
+}
+
+.containher .box .imgBx img[src~='nola'] {
+  max-width: 100px;
+}
+
+.containher .box .nola-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #9453A6;
+  -webkit-transform: scale(1) translateY(calc(100% - 5px));
+          transform: scale(1) translateY(calc(100% - 5px));
+}
+
+.containher .box:hover .nola-content {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.containher .box:nth-child(2) .nola-content {
+  background-color: #F2CC0F;
+}
+
+.containher .box:nth-child(3) .nola-content {
+  background-color: #8CBF3F;
+}
+
+.containher .box .nola-content .nola-icon img[src~='nola'] {
+  max-width: 80px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.containher .box .nola-content h3 {
+  color: #F2F2F2;
+  font-family: "Pattaya", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.containher .box .nola-content h4 {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.usern-input, .userl-input, .usere-input, .usermsg-input {
+  width: 98.4%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.usern-input .usern, .userl-input .usern, .usere-input .usern, .usermsg-input .usern, .userl-input .userl, .usere-input .usere, .usermsg-input .usermsg {
+  width: 100%;
+  height: 100%;
+  color: #0D0D0D;
+  padding-top: 20px;
+  border: none;
+  outline: 0;
+}
+
+.usern-input .label-usern, .userl-input .label-usern, .usere-input .label-usern, .usermsg-input .label-usern, .userl-input .label-userl, .usere-input .label-usere, .usermsg-input .label-usermsg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.usern-input .label-usern::after, .userl-input .label-usern::after, .usere-input .label-usern::after, .usermsg-input .label-usern::after, .userl-input .label-userl::after, .usere-input .label-usere::after, .usermsg-input .label-usermsg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #9453A6;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.content-usern, .content-userl, .content-usere {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.usern-input .usern:focus + .label-usern .content-usern, .userl-input .usern:focus + .label-usern .content-usern, .usere-input .usern:focus + .label-usern .content-usern, .usermsg-input .usern:focus + .label-usern .content-usern, .usern-input .userl-input .userl:focus + .label-usern .content-usern, .userl-input .usern-input .userl:focus + .label-usern .content-usern, .userl-input .userl:focus + .label-usern .content-usern, .usere-input .userl-input .userl:focus + .label-usern .content-usern, .userl-input .usere-input .userl:focus + .label-usern .content-usern, .usermsg-input .userl-input .userl:focus + .label-usern .content-usern, .userl-input .usermsg-input .userl:focus + .label-usern .content-usern, .usern-input .usere-input .usere:focus + .label-usern .content-usern, .usere-input .usern-input .usere:focus + .label-usern .content-usern, .userl-input .usere-input .usere:focus + .label-usern .content-usern, .usere-input .userl-input .usere:focus + .label-usern .content-usern, .usere-input .usere:focus + .label-usern .content-usern, .usermsg-input .usere-input .usere:focus + .label-usern .content-usern, .usere-input .usermsg-input .usere:focus + .label-usern .content-usern, .usern-input .usermsg-input .usermsg:focus + .label-usern .content-usern, .usermsg-input .usern-input .usermsg:focus + .label-usern .content-usern, .userl-input .usermsg-input .usermsg:focus + .label-usern .content-usern, .usermsg-input .userl-input .usermsg:focus + .label-usern .content-usern, .usere-input .usermsg-input .usermsg:focus + .label-usern .content-usern, .usermsg-input .usere-input .usermsg:focus + .label-usern .content-usern, .usermsg-input .usermsg:focus + .label-usern .content-usern, .usern-input .userl-input .usern:focus + .label-userl .content-usern, .userl-input .usern-input .usern:focus + .label-userl .content-usern, .userl-input .usern:focus + .label-userl .content-usern, .usere-input .userl-input .usern:focus + .label-userl .content-usern, .userl-input .usere-input .usern:focus + .label-userl .content-usern, .usermsg-input .userl-input .usern:focus + .label-userl .content-usern, .userl-input .usermsg-input .usern:focus + .label-userl .content-usern, .usern-input .userl-input .userl:focus + .label-userl .content-usern, .userl-input .usern-input .userl:focus + .label-userl .content-usern, .userl-input .userl:focus + .label-userl .content-usern, .usere-input .userl-input .userl:focus + .label-userl .content-usern, .userl-input .usere-input .userl:focus + .label-userl .content-usern, .usermsg-input .userl-input .userl:focus + .label-userl .content-usern, .userl-input .usermsg-input .userl:focus + .label-userl .content-usern, .usern-input .usere-input .userl-input .usere:focus + .label-userl .content-usern, .userl-input .usern-input .usere-input .usere:focus + .label-userl .content-usern, .usere-input .usern-input .userl-input .usere:focus + .label-userl .content-usern, .userl-input .usere-input .usern-input .usere:focus + .label-userl .content-usern, .userl-input .usere-input .usere:focus + .label-userl .content-usern, .usere-input .userl-input .usere:focus + .label-userl .content-usern, .usere-input .userl-input .usere:focus + .label-userl .content-usern, .userl-input .usere-input .usere:focus + .label-userl .content-usern, .usermsg-input .usere-input .userl-input .usere:focus + .label-userl .content-usern, .userl-input .usermsg-input .usere-input .usere:focus + .label-userl .content-usern, .usere-input .usermsg-input .userl-input .usere:focus + .label-userl .content-usern, .userl-input .usere-input .usermsg-input .usere:focus + .label-userl .content-usern, .usern-input .usermsg-input .userl-input .usermsg:focus + .label-userl .content-usern, .userl-input .usern-input .usermsg-input .usermsg:focus + .label-userl .content-usern, .usermsg-input .usern-input .userl-input .usermsg:focus + .label-userl .content-usern, .userl-input .usermsg-input .usern-input .usermsg:focus + .label-userl .content-usern, .userl-input .usermsg-input .usermsg:focus + .label-userl .content-usern, .usermsg-input .userl-input .usermsg:focus + .label-userl .content-usern, .usere-input .usermsg-input .userl-input .usermsg:focus + .label-userl .content-usern, .userl-input .usere-input .usermsg-input .usermsg:focus + .label-userl .content-usern, .usermsg-input .usere-input .userl-input .usermsg:focus + .label-userl .content-usern, .userl-input .usermsg-input .usere-input .usermsg:focus + .label-userl .content-usern, .usermsg-input .userl-input .usermsg:focus + .label-userl .content-usern, .userl-input .usermsg-input .usermsg:focus + .label-userl .content-usern, .usern-input .usere-input .usern:focus + .label-usere .content-usern, .usere-input .usern-input .usern:focus + .label-usere .content-usern, .userl-input .usere-input .usern:focus + .label-usere .content-usern, .usere-input .userl-input .usern:focus + .label-usere .content-usern, .usere-input .usern:focus + .label-usere .content-usern, .usermsg-input .usere-input .usern:focus + .label-usere .content-usern, .usere-input .usermsg-input .usern:focus + .label-usere .content-usern, .usern-input .userl-input .usere-input .userl:focus + .label-usere .content-usern, .usere-input .usern-input .userl-input .userl:focus + .label-usere .content-usern, .userl-input .usern-input .usere-input .userl:focus + .label-usere .content-usern, .usere-input .userl-input .usern-input .userl:focus + .label-usere .content-usern, .userl-input .usere-input .userl:focus + .label-usere .content-usern, .usere-input .userl-input .userl:focus + .label-usere .content-usern, .usere-input .userl-input .userl:focus + .label-usere .content-usern, .userl-input .usere-input .userl:focus + .label-usere .content-usern, .usermsg-input .userl-input .usere-input .userl:focus + .label-usere .content-usern, .usere-input .usermsg-input .userl-input .userl:focus + .label-usere .content-usern, .userl-input .usermsg-input .usere-input .userl:focus + .label-usere .content-usern, .usere-input .userl-input .usermsg-input .userl:focus + .label-usere .content-usern, .usern-input .usere-input .usere:focus + .label-usere .content-usern, .usere-input .usern-input .usere:focus + .label-usere .content-usern, .userl-input .usere-input .usere:focus + .label-usere .content-usern, .usere-input .userl-input .usere:focus + .label-usere .content-usern, .usere-input .usere:focus + .label-usere .content-usern, .usermsg-input .usere-input .usere:focus + .label-usere .content-usern, .usere-input .usermsg-input .usere:focus + .label-usere .content-usern, .usern-input .usermsg-input .usere-input .usermsg:focus + .label-usere .content-usern, .usere-input .usern-input .usermsg-input .usermsg:focus + .label-usere .content-usern, .usermsg-input .usern-input .usere-input .usermsg:focus + .label-usere .content-usern, .usere-input .usermsg-input .usern-input .usermsg:focus + .label-usere .content-usern, .userl-input .usermsg-input .usere-input .usermsg:focus + .label-usere .content-usern, .usere-input .userl-input .usermsg-input .usermsg:focus + .label-usere .content-usern, .usermsg-input .userl-input .usere-input .usermsg:focus + .label-usere .content-usern, .usere-input .usermsg-input .userl-input .usermsg:focus + .label-usere .content-usern, .usere-input .usermsg-input .usermsg:focus + .label-usere .content-usern, .usermsg-input .usere-input .usermsg:focus + .label-usere .content-usern, .usermsg-input .usere-input .usermsg:focus + .label-usere .content-usern, .usere-input .usermsg-input .usermsg:focus + .label-usere .content-usern, .usern-input .usermsg-input .usern:focus + .label-usermsg .content-usern, .usermsg-input .usern-input .usern:focus + .label-usermsg .content-usern, .userl-input .usermsg-input .usern:focus + .label-usermsg .content-usern, .usermsg-input .userl-input .usern:focus + .label-usermsg .content-usern, .usere-input .usermsg-input .usern:focus + .label-usermsg .content-usern, .usermsg-input .usere-input .usern:focus + .label-usermsg .content-usern, .usermsg-input .usern:focus + .label-usermsg .content-usern, .usern-input .userl-input .usermsg-input .userl:focus + .label-usermsg .content-usern, .usermsg-input .usern-input .userl-input .userl:focus + .label-usermsg .content-usern, .userl-input .usern-input .usermsg-input .userl:focus + .label-usermsg .content-usern, .usermsg-input .userl-input .usern-input .userl:focus + .label-usermsg .content-usern, .userl-input .usermsg-input .userl:focus + .label-usermsg .content-usern, .usermsg-input .userl-input .userl:focus + .label-usermsg .content-usern, .usere-input .userl-input .usermsg-input .userl:focus + .label-usermsg .content-usern, .usermsg-input .usere-input .userl-input .userl:focus + .label-usermsg .content-usern, .userl-input .usere-input .usermsg-input .userl:focus + .label-usermsg .content-usern, .usermsg-input .userl-input .usere-input .userl:focus + .label-usermsg .content-usern, .usermsg-input .userl-input .userl:focus + .label-usermsg .content-usern, .userl-input .usermsg-input .userl:focus + .label-usermsg .content-usern, .usern-input .usere-input .usermsg-input .usere:focus + .label-usermsg .content-usern, .usermsg-input .usern-input .usere-input .usere:focus + .label-usermsg .content-usern, .usere-input .usern-input .usermsg-input .usere:focus + .label-usermsg .content-usern, .usermsg-input .usere-input .usern-input .usere:focus + .label-usermsg .content-usern, .userl-input .usere-input .usermsg-input .usere:focus + .label-usermsg .content-usern, .usermsg-input .userl-input .usere-input .usere:focus + .label-usermsg .content-usern, .usere-input .userl-input .usermsg-input .usere:focus + .label-usermsg .content-usern, .usermsg-input .usere-input .userl-input .usere:focus + .label-usermsg .content-usern, .usere-input .usermsg-input .usere:focus + .label-usermsg .content-usern, .usermsg-input .usere-input .usere:focus + .label-usermsg .content-usern, .usermsg-input .usere-input .usere:focus + .label-usermsg .content-usern, .usere-input .usermsg-input .usere:focus + .label-usermsg .content-usern, .usern-input .usermsg-input .usermsg:focus + .label-usermsg .content-usern, .usermsg-input .usern-input .usermsg:focus + .label-usermsg .content-usern, .userl-input .usermsg-input .usermsg:focus + .label-usermsg .content-usern, .usermsg-input .userl-input .usermsg:focus + .label-usermsg .content-usern, .usere-input .usermsg-input .usermsg:focus + .label-usermsg .content-usern, .usermsg-input .usere-input .usermsg:focus + .label-usermsg .content-usern, .usermsg-input .usermsg:focus + .label-usermsg .content-usern, .usern-input .usern:focus + .label-usern .content-userl, .userl-input .usern:focus + .label-usern .content-userl, .usere-input .usern:focus + .label-usern .content-userl, .usermsg-input .usern:focus + .label-usern .content-userl, .usern-input .userl-input .userl:focus + .label-usern .content-userl, .userl-input .usern-input .userl:focus + .label-usern .content-userl, .userl-input .userl:focus + .label-usern .content-userl, .usere-input .userl-input .userl:focus + .label-usern .content-userl, .userl-input .usere-input .userl:focus + .label-usern .content-userl, .usermsg-input .userl-input .userl:focus + .label-usern .content-userl, .userl-input .usermsg-input .userl:focus + .label-usern .content-userl, .usern-input .usere-input .usere:focus + .label-usern .content-userl, .usere-input .usern-input .usere:focus + .label-usern .content-userl, .userl-input .usere-input .usere:focus + .label-usern .content-userl, .usere-input .userl-input .usere:focus + .label-usern .content-userl, .usere-input .usere:focus + .label-usern .content-userl, .usermsg-input .usere-input .usere:focus + .label-usern .content-userl, .usere-input .usermsg-input .usere:focus + .label-usern .content-userl, .usern-input .usermsg-input .usermsg:focus + .label-usern .content-userl, .usermsg-input .usern-input .usermsg:focus + .label-usern .content-userl, .userl-input .usermsg-input .usermsg:focus + .label-usern .content-userl, .usermsg-input .userl-input .usermsg:focus + .label-usern .content-userl, .usere-input .usermsg-input .usermsg:focus + .label-usern .content-userl, .usermsg-input .usere-input .usermsg:focus + .label-usern .content-userl, .usermsg-input .usermsg:focus + .label-usern .content-userl, .usern-input .userl-input .usern:focus + .label-userl .content-userl, .userl-input .usern-input .usern:focus + .label-userl .content-userl, .userl-input .usern:focus + .label-userl .content-userl, .usere-input .userl-input .usern:focus + .label-userl .content-userl, .userl-input .usere-input .usern:focus + .label-userl .content-userl, .usermsg-input .userl-input .usern:focus + .label-userl .content-userl, .userl-input .usermsg-input .usern:focus + .label-userl .content-userl, .usern-input .userl-input .userl:focus + .label-userl .content-userl, .userl-input .usern-input .userl:focus + .label-userl .content-userl, .userl-input .userl:focus + .label-userl .content-userl, .usere-input .userl-input .userl:focus + .label-userl .content-userl, .userl-input .usere-input .userl:focus + .label-userl .content-userl, .usermsg-input .userl-input .userl:focus + .label-userl .content-userl, .userl-input .usermsg-input .userl:focus + .label-userl .content-userl, .usern-input .usere-input .userl-input .usere:focus + .label-userl .content-userl, .userl-input .usern-input .usere-input .usere:focus + .label-userl .content-userl, .usere-input .usern-input .userl-input .usere:focus + .label-userl .content-userl, .userl-input .usere-input .usern-input .usere:focus + .label-userl .content-userl, .userl-input .usere-input .usere:focus + .label-userl .content-userl, .usere-input .userl-input .usere:focus + .label-userl .content-userl, .usere-input .userl-input .usere:focus + .label-userl .content-userl, .userl-input .usere-input .usere:focus + .label-userl .content-userl, .usermsg-input .usere-input .userl-input .usere:focus + .label-userl .content-userl, .userl-input .usermsg-input .usere-input .usere:focus + .label-userl .content-userl, .usere-input .usermsg-input .userl-input .usere:focus + .label-userl .content-userl, .userl-input .usere-input .usermsg-input .usere:focus + .label-userl .content-userl, .usern-input .usermsg-input .userl-input .usermsg:focus + .label-userl .content-userl, .userl-input .usern-input .usermsg-input .usermsg:focus + .label-userl .content-userl, .usermsg-input .usern-input .userl-input .usermsg:focus + .label-userl .content-userl, .userl-input .usermsg-input .usern-input .usermsg:focus + .label-userl .content-userl, .userl-input .usermsg-input .usermsg:focus + .label-userl .content-userl, .usermsg-input .userl-input .usermsg:focus + .label-userl .content-userl, .usere-input .usermsg-input .userl-input .usermsg:focus + .label-userl .content-userl, .userl-input .usere-input .usermsg-input .usermsg:focus + .label-userl .content-userl, .usermsg-input .usere-input .userl-input .usermsg:focus + .label-userl .content-userl, .userl-input .usermsg-input .usere-input .usermsg:focus + .label-userl .content-userl, .usermsg-input .userl-input .usermsg:focus + .label-userl .content-userl, .userl-input .usermsg-input .usermsg:focus + .label-userl .content-userl, .usern-input .usere-input .usern:focus + .label-usere .content-userl, .usere-input .usern-input .usern:focus + .label-usere .content-userl, .userl-input .usere-input .usern:focus + .label-usere .content-userl, .usere-input .userl-input .usern:focus + .label-usere .content-userl, .usere-input .usern:focus + .label-usere .content-userl, .usermsg-input .usere-input .usern:focus + .label-usere .content-userl, .usere-input .usermsg-input .usern:focus + .label-usere .content-userl, .usern-input .userl-input .usere-input .userl:focus + .label-usere .content-userl, .usere-input .usern-input .userl-input .userl:focus + .label-usere .content-userl, .userl-input .usern-input .usere-input .userl:focus + .label-usere .content-userl, .usere-input .userl-input .usern-input .userl:focus + .label-usere .content-userl, .userl-input .usere-input .userl:focus + .label-usere .content-userl, .usere-input .userl-input .userl:focus + .label-usere .content-userl, .usere-input .userl-input .userl:focus + .label-usere .content-userl, .userl-input .usere-input .userl:focus + .label-usere .content-userl, .usermsg-input .userl-input .usere-input .userl:focus + .label-usere .content-userl, .usere-input .usermsg-input .userl-input .userl:focus + .label-usere .content-userl, .userl-input .usermsg-input .usere-input .userl:focus + .label-usere .content-userl, .usere-input .userl-input .usermsg-input .userl:focus + .label-usere .content-userl, .usern-input .usere-input .usere:focus + .label-usere .content-userl, .usere-input .usern-input .usere:focus + .label-usere .content-userl, .userl-input .usere-input .usere:focus + .label-usere .content-userl, .usere-input .userl-input .usere:focus + .label-usere .content-userl, .usere-input .usere:focus + .label-usere .content-userl, .usermsg-input .usere-input .usere:focus + .label-usere .content-userl, .usere-input .usermsg-input .usere:focus + .label-usere .content-userl, .usern-input .usermsg-input .usere-input .usermsg:focus + .label-usere .content-userl, .usere-input .usern-input .usermsg-input .usermsg:focus + .label-usere .content-userl, .usermsg-input .usern-input .usere-input .usermsg:focus + .label-usere .content-userl, .usere-input .usermsg-input .usern-input .usermsg:focus + .label-usere .content-userl, .userl-input .usermsg-input .usere-input .usermsg:focus + .label-usere .content-userl, .usere-input .userl-input .usermsg-input .usermsg:focus + .label-usere .content-userl, .usermsg-input .userl-input .usere-input .usermsg:focus + .label-usere .content-userl, .usere-input .usermsg-input .userl-input .usermsg:focus + .label-usere .content-userl, .usere-input .usermsg-input .usermsg:focus + .label-usere .content-userl, .usermsg-input .usere-input .usermsg:focus + .label-usere .content-userl, .usermsg-input .usere-input .usermsg:focus + .label-usere .content-userl, .usere-input .usermsg-input .usermsg:focus + .label-usere .content-userl, .usern-input .usermsg-input .usern:focus + .label-usermsg .content-userl, .usermsg-input .usern-input .usern:focus + .label-usermsg .content-userl, .userl-input .usermsg-input .usern:focus + .label-usermsg .content-userl, .usermsg-input .userl-input .usern:focus + .label-usermsg .content-userl, .usere-input .usermsg-input .usern:focus + .label-usermsg .content-userl, .usermsg-input .usere-input .usern:focus + .label-usermsg .content-userl, .usermsg-input .usern:focus + .label-usermsg .content-userl, .usern-input .userl-input .usermsg-input .userl:focus + .label-usermsg .content-userl, .usermsg-input .usern-input .userl-input .userl:focus + .label-usermsg .content-userl, .userl-input .usern-input .usermsg-input .userl:focus + .label-usermsg .content-userl, .usermsg-input .userl-input .usern-input .userl:focus + .label-usermsg .content-userl, .userl-input .usermsg-input .userl:focus + .label-usermsg .content-userl, .usermsg-input .userl-input .userl:focus + .label-usermsg .content-userl, .usere-input .userl-input .usermsg-input .userl:focus + .label-usermsg .content-userl, .usermsg-input .usere-input .userl-input .userl:focus + .label-usermsg .content-userl, .userl-input .usere-input .usermsg-input .userl:focus + .label-usermsg .content-userl, .usermsg-input .userl-input .usere-input .userl:focus + .label-usermsg .content-userl, .usermsg-input .userl-input .userl:focus + .label-usermsg .content-userl, .userl-input .usermsg-input .userl:focus + .label-usermsg .content-userl, .usern-input .usere-input .usermsg-input .usere:focus + .label-usermsg .content-userl, .usermsg-input .usern-input .usere-input .usere:focus + .label-usermsg .content-userl, .usere-input .usern-input .usermsg-input .usere:focus + .label-usermsg .content-userl, .usermsg-input .usere-input .usern-input .usere:focus + .label-usermsg .content-userl, .userl-input .usere-input .usermsg-input .usere:focus + .label-usermsg .content-userl, .usermsg-input .userl-input .usere-input .usere:focus + .label-usermsg .content-userl, .usere-input .userl-input .usermsg-input .usere:focus + .label-usermsg .content-userl, .usermsg-input .usere-input .userl-input .usere:focus + .label-usermsg .content-userl, .usere-input .usermsg-input .usere:focus + .label-usermsg .content-userl, .usermsg-input .usere-input .usere:focus + .label-usermsg .content-userl, .usermsg-input .usere-input .usere:focus + .label-usermsg .content-userl, .usere-input .usermsg-input .usere:focus + .label-usermsg .content-userl, .usern-input .usermsg-input .usermsg:focus + .label-usermsg .content-userl, .usermsg-input .usern-input .usermsg:focus + .label-usermsg .content-userl, .userl-input .usermsg-input .usermsg:focus + .label-usermsg .content-userl, .usermsg-input .userl-input .usermsg:focus + .label-usermsg .content-userl, .usere-input .usermsg-input .usermsg:focus + .label-usermsg .content-userl, .usermsg-input .usere-input .usermsg:focus + .label-usermsg .content-userl, .usermsg-input .usermsg:focus + .label-usermsg .content-userl, .usern-input .usern:focus + .label-usern .content-usere, .userl-input .usern:focus + .label-usern .content-usere, .usere-input .usern:focus + .label-usern .content-usere, .usermsg-input .usern:focus + .label-usern .content-usere, .usern-input .userl-input .userl:focus + .label-usern .content-usere, .userl-input .usern-input .userl:focus + .label-usern .content-usere, .userl-input .userl:focus + .label-usern .content-usere, .usere-input .userl-input .userl:focus + .label-usern .content-usere, .userl-input .usere-input .userl:focus + .label-usern .content-usere, .usermsg-input .userl-input .userl:focus + .label-usern .content-usere, .userl-input .usermsg-input .userl:focus + .label-usern .content-usere, .usern-input .usere-input .usere:focus + .label-usern .content-usere, .usere-input .usern-input .usere:focus + .label-usern .content-usere, .userl-input .usere-input .usere:focus + .label-usern .content-usere, .usere-input .userl-input .usere:focus + .label-usern .content-usere, .usere-input .usere:focus + .label-usern .content-usere, .usermsg-input .usere-input .usere:focus + .label-usern .content-usere, .usere-input .usermsg-input .usere:focus + .label-usern .content-usere, .usern-input .usermsg-input .usermsg:focus + .label-usern .content-usere, .usermsg-input .usern-input .usermsg:focus + .label-usern .content-usere, .userl-input .usermsg-input .usermsg:focus + .label-usern .content-usere, .usermsg-input .userl-input .usermsg:focus + .label-usern .content-usere, .usere-input .usermsg-input .usermsg:focus + .label-usern .content-usere, .usermsg-input .usere-input .usermsg:focus + .label-usern .content-usere, .usermsg-input .usermsg:focus + .label-usern .content-usere, .usern-input .userl-input .usern:focus + .label-userl .content-usere, .userl-input .usern-input .usern:focus + .label-userl .content-usere, .userl-input .usern:focus + .label-userl .content-usere, .usere-input .userl-input .usern:focus + .label-userl .content-usere, .userl-input .usere-input .usern:focus + .label-userl .content-usere, .usermsg-input .userl-input .usern:focus + .label-userl .content-usere, .userl-input .usermsg-input .usern:focus + .label-userl .content-usere, .usern-input .userl-input .userl:focus + .label-userl .content-usere, .userl-input .usern-input .userl:focus + .label-userl .content-usere, .userl-input .userl:focus + .label-userl .content-usere, .usere-input .userl-input .userl:focus + .label-userl .content-usere, .userl-input .usere-input .userl:focus + .label-userl .content-usere, .usermsg-input .userl-input .userl:focus + .label-userl .content-usere, .userl-input .usermsg-input .userl:focus + .label-userl .content-usere, .usern-input .usere-input .userl-input .usere:focus + .label-userl .content-usere, .userl-input .usern-input .usere-input .usere:focus + .label-userl .content-usere, .usere-input .usern-input .userl-input .usere:focus + .label-userl .content-usere, .userl-input .usere-input .usern-input .usere:focus + .label-userl .content-usere, .userl-input .usere-input .usere:focus + .label-userl .content-usere, .usere-input .userl-input .usere:focus + .label-userl .content-usere, .usere-input .userl-input .usere:focus + .label-userl .content-usere, .userl-input .usere-input .usere:focus + .label-userl .content-usere, .usermsg-input .usere-input .userl-input .usere:focus + .label-userl .content-usere, .userl-input .usermsg-input .usere-input .usere:focus + .label-userl .content-usere, .usere-input .usermsg-input .userl-input .usere:focus + .label-userl .content-usere, .userl-input .usere-input .usermsg-input .usere:focus + .label-userl .content-usere, .usern-input .usermsg-input .userl-input .usermsg:focus + .label-userl .content-usere, .userl-input .usern-input .usermsg-input .usermsg:focus + .label-userl .content-usere, .usermsg-input .usern-input .userl-input .usermsg:focus + .label-userl .content-usere, .userl-input .usermsg-input .usern-input .usermsg:focus + .label-userl .content-usere, .userl-input .usermsg-input .usermsg:focus + .label-userl .content-usere, .usermsg-input .userl-input .usermsg:focus + .label-userl .content-usere, .usere-input .usermsg-input .userl-input .usermsg:focus + .label-userl .content-usere, .userl-input .usere-input .usermsg-input .usermsg:focus + .label-userl .content-usere, .usermsg-input .usere-input .userl-input .usermsg:focus + .label-userl .content-usere, .userl-input .usermsg-input .usere-input .usermsg:focus + .label-userl .content-usere, .usermsg-input .userl-input .usermsg:focus + .label-userl .content-usere, .userl-input .usermsg-input .usermsg:focus + .label-userl .content-usere, .usern-input .usere-input .usern:focus + .label-usere .content-usere, .usere-input .usern-input .usern:focus + .label-usere .content-usere, .userl-input .usere-input .usern:focus + .label-usere .content-usere, .usere-input .userl-input .usern:focus + .label-usere .content-usere, .usere-input .usern:focus + .label-usere .content-usere, .usermsg-input .usere-input .usern:focus + .label-usere .content-usere, .usere-input .usermsg-input .usern:focus + .label-usere .content-usere, .usern-input .userl-input .usere-input .userl:focus + .label-usere .content-usere, .usere-input .usern-input .userl-input .userl:focus + .label-usere .content-usere, .userl-input .usern-input .usere-input .userl:focus + .label-usere .content-usere, .usere-input .userl-input .usern-input .userl:focus + .label-usere .content-usere, .userl-input .usere-input .userl:focus + .label-usere .content-usere, .usere-input .userl-input .userl:focus + .label-usere .content-usere, .usere-input .userl-input .userl:focus + .label-usere .content-usere, .userl-input .usere-input .userl:focus + .label-usere .content-usere, .usermsg-input .userl-input .usere-input .userl:focus + .label-usere .content-usere, .usere-input .usermsg-input .userl-input .userl:focus + .label-usere .content-usere, .userl-input .usermsg-input .usere-input .userl:focus + .label-usere .content-usere, .usere-input .userl-input .usermsg-input .userl:focus + .label-usere .content-usere, .usern-input .usere-input .usere:focus + .label-usere .content-usere, .usere-input .usern-input .usere:focus + .label-usere .content-usere, .userl-input .usere-input .usere:focus + .label-usere .content-usere, .usere-input .userl-input .usere:focus + .label-usere .content-usere, .usere-input .usere:focus + .label-usere .content-usere, .usermsg-input .usere-input .usere:focus + .label-usere .content-usere, .usere-input .usermsg-input .usere:focus + .label-usere .content-usere, .usern-input .usermsg-input .usere-input .usermsg:focus + .label-usere .content-usere, .usere-input .usern-input .usermsg-input .usermsg:focus + .label-usere .content-usere, .usermsg-input .usern-input .usere-input .usermsg:focus + .label-usere .content-usere, .usere-input .usermsg-input .usern-input .usermsg:focus + .label-usere .content-usere, .userl-input .usermsg-input .usere-input .usermsg:focus + .label-usere .content-usere, .usere-input .userl-input .usermsg-input .usermsg:focus + .label-usere .content-usere, .usermsg-input .userl-input .usere-input .usermsg:focus + .label-usere .content-usere, .usere-input .usermsg-input .userl-input .usermsg:focus + .label-usere .content-usere, .usere-input .usermsg-input .usermsg:focus + .label-usere .content-usere, .usermsg-input .usere-input .usermsg:focus + .label-usere .content-usere, .usermsg-input .usere-input .usermsg:focus + .label-usere .content-usere, .usere-input .usermsg-input .usermsg:focus + .label-usere .content-usere, .usern-input .usermsg-input .usern:focus + .label-usermsg .content-usere, .usermsg-input .usern-input .usern:focus + .label-usermsg .content-usere, .userl-input .usermsg-input .usern:focus + .label-usermsg .content-usere, .usermsg-input .userl-input .usern:focus + .label-usermsg .content-usere, .usere-input .usermsg-input .usern:focus + .label-usermsg .content-usere, .usermsg-input .usere-input .usern:focus + .label-usermsg .content-usere, .usermsg-input .usern:focus + .label-usermsg .content-usere, .usern-input .userl-input .usermsg-input .userl:focus + .label-usermsg .content-usere, .usermsg-input .usern-input .userl-input .userl:focus + .label-usermsg .content-usere, .userl-input .usern-input .usermsg-input .userl:focus + .label-usermsg .content-usere, .usermsg-input .userl-input .usern-input .userl:focus + .label-usermsg .content-usere, .userl-input .usermsg-input .userl:focus + .label-usermsg .content-usere, .usermsg-input .userl-input .userl:focus + .label-usermsg .content-usere, .usere-input .userl-input .usermsg-input .userl:focus + .label-usermsg .content-usere, .usermsg-input .usere-input .userl-input .userl:focus + .label-usermsg .content-usere, .userl-input .usere-input .usermsg-input .userl:focus + .label-usermsg .content-usere, .usermsg-input .userl-input .usere-input .userl:focus + .label-usermsg .content-usere, .usermsg-input .userl-input .userl:focus + .label-usermsg .content-usere, .userl-input .usermsg-input .userl:focus + .label-usermsg .content-usere, .usern-input .usere-input .usermsg-input .usere:focus + .label-usermsg .content-usere, .usermsg-input .usern-input .usere-input .usere:focus + .label-usermsg .content-usere, .usere-input .usern-input .usermsg-input .usere:focus + .label-usermsg .content-usere, .usermsg-input .usere-input .usern-input .usere:focus + .label-usermsg .content-usere, .userl-input .usere-input .usermsg-input .usere:focus + .label-usermsg .content-usere, .usermsg-input .userl-input .usere-input .usere:focus + .label-usermsg .content-usere, .usere-input .userl-input .usermsg-input .usere:focus + .label-usermsg .content-usere, .usermsg-input .usere-input .userl-input .usere:focus + .label-usermsg .content-usere, .usere-input .usermsg-input .usere:focus + .label-usermsg .content-usere, .usermsg-input .usere-input .usere:focus + .label-usermsg .content-usere, .usermsg-input .usere-input .usere:focus + .label-usermsg .content-usere, .usere-input .usermsg-input .usere:focus + .label-usermsg .content-usere, .usern-input .usermsg-input .usermsg:focus + .label-usermsg .content-usere, .usermsg-input .usern-input .usermsg:focus + .label-usermsg .content-usere, .userl-input .usermsg-input .usermsg:focus + .label-usermsg .content-usere, .usermsg-input .userl-input .usermsg:focus + .label-usermsg .content-usere, .usere-input .usermsg-input .usermsg:focus + .label-usermsg .content-usere, .usermsg-input .usere-input .usermsg:focus + .label-usermsg .content-usere, .usermsg-input .usermsg:focus + .label-usermsg .content-usere,
+.usern-input .usern:valid + .label-usern .content-usern,
+.userl-input .usern:valid + .label-usern .content-usern,
+.usere-input .usern:valid + .label-usern .content-usern,
+.usermsg-input .usern:valid + .label-usern .content-usern,
+.usern-input .userl-input .userl:valid + .label-usern .content-usern,
+.userl-input .usern-input .userl:valid + .label-usern .content-usern,
+.userl-input .userl:valid + .label-usern .content-usern,
+.usere-input .userl-input .userl:valid + .label-usern .content-usern,
+.userl-input .usere-input .userl:valid + .label-usern .content-usern,
+.usermsg-input .userl-input .userl:valid + .label-usern .content-usern,
+.userl-input .usermsg-input .userl:valid + .label-usern .content-usern,
+.usern-input .usere-input .usere:valid + .label-usern .content-usern,
+.usere-input .usern-input .usere:valid + .label-usern .content-usern,
+.userl-input .usere-input .usere:valid + .label-usern .content-usern,
+.usere-input .userl-input .usere:valid + .label-usern .content-usern,
+.usere-input .usere:valid + .label-usern .content-usern,
+.usermsg-input .usere-input .usere:valid + .label-usern .content-usern,
+.usere-input .usermsg-input .usere:valid + .label-usern .content-usern,
+.usern-input .usermsg-input .usermsg:valid + .label-usern .content-usern,
+.usermsg-input .usern-input .usermsg:valid + .label-usern .content-usern,
+.userl-input .usermsg-input .usermsg:valid + .label-usern .content-usern,
+.usermsg-input .userl-input .usermsg:valid + .label-usern .content-usern,
+.usere-input .usermsg-input .usermsg:valid + .label-usern .content-usern,
+.usermsg-input .usere-input .usermsg:valid + .label-usern .content-usern,
+.usermsg-input .usermsg:valid + .label-usern .content-usern,
+.usern-input .userl-input .usern:valid + .label-userl .content-usern,
+.userl-input .usern-input .usern:valid + .label-userl .content-usern,
+.userl-input .usern:valid + .label-userl .content-usern,
+.usere-input .userl-input .usern:valid + .label-userl .content-usern,
+.userl-input .usere-input .usern:valid + .label-userl .content-usern,
+.usermsg-input .userl-input .usern:valid + .label-userl .content-usern,
+.userl-input .usermsg-input .usern:valid + .label-userl .content-usern,
+.usern-input .userl-input .userl:valid + .label-userl .content-usern,
+.userl-input .usern-input .userl:valid + .label-userl .content-usern,
+.userl-input .userl:valid + .label-userl .content-usern,
+.usere-input .userl-input .userl:valid + .label-userl .content-usern,
+.userl-input .usere-input .userl:valid + .label-userl .content-usern,
+.usermsg-input .userl-input .userl:valid + .label-userl .content-usern,
+.userl-input .usermsg-input .userl:valid + .label-userl .content-usern,
+.usern-input .usere-input .userl-input .usere:valid + .label-userl .content-usern,
+.userl-input .usern-input .usere-input .usere:valid + .label-userl .content-usern,
+.usere-input .usern-input .userl-input .usere:valid + .label-userl .content-usern,
+.userl-input .usere-input .usern-input .usere:valid + .label-userl .content-usern,
+.userl-input .usere-input .usere:valid + .label-userl .content-usern,
+.usere-input .userl-input .usere:valid + .label-userl .content-usern,
+.usere-input .userl-input .usere:valid + .label-userl .content-usern,
+.userl-input .usere-input .usere:valid + .label-userl .content-usern,
+.usermsg-input .usere-input .userl-input .usere:valid + .label-userl .content-usern,
+.userl-input .usermsg-input .usere-input .usere:valid + .label-userl .content-usern,
+.usere-input .usermsg-input .userl-input .usere:valid + .label-userl .content-usern,
+.userl-input .usere-input .usermsg-input .usere:valid + .label-userl .content-usern,
+.usern-input .usermsg-input .userl-input .usermsg:valid + .label-userl .content-usern,
+.userl-input .usern-input .usermsg-input .usermsg:valid + .label-userl .content-usern,
+.usermsg-input .usern-input .userl-input .usermsg:valid + .label-userl .content-usern,
+.userl-input .usermsg-input .usern-input .usermsg:valid + .label-userl .content-usern,
+.userl-input .usermsg-input .usermsg:valid + .label-userl .content-usern,
+.usermsg-input .userl-input .usermsg:valid + .label-userl .content-usern,
+.usere-input .usermsg-input .userl-input .usermsg:valid + .label-userl .content-usern,
+.userl-input .usere-input .usermsg-input .usermsg:valid + .label-userl .content-usern,
+.usermsg-input .usere-input .userl-input .usermsg:valid + .label-userl .content-usern,
+.userl-input .usermsg-input .usere-input .usermsg:valid + .label-userl .content-usern,
+.usermsg-input .userl-input .usermsg:valid + .label-userl .content-usern,
+.userl-input .usermsg-input .usermsg:valid + .label-userl .content-usern,
+.usern-input .usere-input .usern:valid + .label-usere .content-usern,
+.usere-input .usern-input .usern:valid + .label-usere .content-usern,
+.userl-input .usere-input .usern:valid + .label-usere .content-usern,
+.usere-input .userl-input .usern:valid + .label-usere .content-usern,
+.usere-input .usern:valid + .label-usere .content-usern,
+.usermsg-input .usere-input .usern:valid + .label-usere .content-usern,
+.usere-input .usermsg-input .usern:valid + .label-usere .content-usern,
+.usern-input .userl-input .usere-input .userl:valid + .label-usere .content-usern,
+.usere-input .usern-input .userl-input .userl:valid + .label-usere .content-usern,
+.userl-input .usern-input .usere-input .userl:valid + .label-usere .content-usern,
+.usere-input .userl-input .usern-input .userl:valid + .label-usere .content-usern,
+.userl-input .usere-input .userl:valid + .label-usere .content-usern,
+.usere-input .userl-input .userl:valid + .label-usere .content-usern,
+.usere-input .userl-input .userl:valid + .label-usere .content-usern,
+.userl-input .usere-input .userl:valid + .label-usere .content-usern,
+.usermsg-input .userl-input .usere-input .userl:valid + .label-usere .content-usern,
+.usere-input .usermsg-input .userl-input .userl:valid + .label-usere .content-usern,
+.userl-input .usermsg-input .usere-input .userl:valid + .label-usere .content-usern,
+.usere-input .userl-input .usermsg-input .userl:valid + .label-usere .content-usern,
+.usern-input .usere-input .usere:valid + .label-usere .content-usern,
+.usere-input .usern-input .usere:valid + .label-usere .content-usern,
+.userl-input .usere-input .usere:valid + .label-usere .content-usern,
+.usere-input .userl-input .usere:valid + .label-usere .content-usern,
+.usere-input .usere:valid + .label-usere .content-usern,
+.usermsg-input .usere-input .usere:valid + .label-usere .content-usern,
+.usere-input .usermsg-input .usere:valid + .label-usere .content-usern,
+.usern-input .usermsg-input .usere-input .usermsg:valid + .label-usere .content-usern,
+.usere-input .usern-input .usermsg-input .usermsg:valid + .label-usere .content-usern,
+.usermsg-input .usern-input .usere-input .usermsg:valid + .label-usere .content-usern,
+.usere-input .usermsg-input .usern-input .usermsg:valid + .label-usere .content-usern,
+.userl-input .usermsg-input .usere-input .usermsg:valid + .label-usere .content-usern,
+.usere-input .userl-input .usermsg-input .usermsg:valid + .label-usere .content-usern,
+.usermsg-input .userl-input .usere-input .usermsg:valid + .label-usere .content-usern,
+.usere-input .usermsg-input .userl-input .usermsg:valid + .label-usere .content-usern,
+.usere-input .usermsg-input .usermsg:valid + .label-usere .content-usern,
+.usermsg-input .usere-input .usermsg:valid + .label-usere .content-usern,
+.usermsg-input .usere-input .usermsg:valid + .label-usere .content-usern,
+.usere-input .usermsg-input .usermsg:valid + .label-usere .content-usern,
+.usern-input .usermsg-input .usern:valid + .label-usermsg .content-usern,
+.usermsg-input .usern-input .usern:valid + .label-usermsg .content-usern,
+.userl-input .usermsg-input .usern:valid + .label-usermsg .content-usern,
+.usermsg-input .userl-input .usern:valid + .label-usermsg .content-usern,
+.usere-input .usermsg-input .usern:valid + .label-usermsg .content-usern,
+.usermsg-input .usere-input .usern:valid + .label-usermsg .content-usern,
+.usermsg-input .usern:valid + .label-usermsg .content-usern,
+.usern-input .userl-input .usermsg-input .userl:valid + .label-usermsg .content-usern,
+.usermsg-input .usern-input .userl-input .userl:valid + .label-usermsg .content-usern,
+.userl-input .usern-input .usermsg-input .userl:valid + .label-usermsg .content-usern,
+.usermsg-input .userl-input .usern-input .userl:valid + .label-usermsg .content-usern,
+.userl-input .usermsg-input .userl:valid + .label-usermsg .content-usern,
+.usermsg-input .userl-input .userl:valid + .label-usermsg .content-usern,
+.usere-input .userl-input .usermsg-input .userl:valid + .label-usermsg .content-usern,
+.usermsg-input .usere-input .userl-input .userl:valid + .label-usermsg .content-usern,
+.userl-input .usere-input .usermsg-input .userl:valid + .label-usermsg .content-usern,
+.usermsg-input .userl-input .usere-input .userl:valid + .label-usermsg .content-usern,
+.usermsg-input .userl-input .userl:valid + .label-usermsg .content-usern,
+.userl-input .usermsg-input .userl:valid + .label-usermsg .content-usern,
+.usern-input .usere-input .usermsg-input .usere:valid + .label-usermsg .content-usern,
+.usermsg-input .usern-input .usere-input .usere:valid + .label-usermsg .content-usern,
+.usere-input .usern-input .usermsg-input .usere:valid + .label-usermsg .content-usern,
+.usermsg-input .usere-input .usern-input .usere:valid + .label-usermsg .content-usern,
+.userl-input .usere-input .usermsg-input .usere:valid + .label-usermsg .content-usern,
+.usermsg-input .userl-input .usere-input .usere:valid + .label-usermsg .content-usern,
+.usere-input .userl-input .usermsg-input .usere:valid + .label-usermsg .content-usern,
+.usermsg-input .usere-input .userl-input .usere:valid + .label-usermsg .content-usern,
+.usere-input .usermsg-input .usere:valid + .label-usermsg .content-usern,
+.usermsg-input .usere-input .usere:valid + .label-usermsg .content-usern,
+.usermsg-input .usere-input .usere:valid + .label-usermsg .content-usern,
+.usere-input .usermsg-input .usere:valid + .label-usermsg .content-usern,
+.usern-input .usermsg-input .usermsg:valid + .label-usermsg .content-usern,
+.usermsg-input .usern-input .usermsg:valid + .label-usermsg .content-usern,
+.userl-input .usermsg-input .usermsg:valid + .label-usermsg .content-usern,
+.usermsg-input .userl-input .usermsg:valid + .label-usermsg .content-usern,
+.usere-input .usermsg-input .usermsg:valid + .label-usermsg .content-usern,
+.usermsg-input .usere-input .usermsg:valid + .label-usermsg .content-usern,
+.usermsg-input .usermsg:valid + .label-usermsg .content-usern,
+.usern-input .usern:valid + .label-usern .content-userl,
+.userl-input .usern:valid + .label-usern .content-userl,
+.usere-input .usern:valid + .label-usern .content-userl,
+.usermsg-input .usern:valid + .label-usern .content-userl,
+.usern-input .userl-input .userl:valid + .label-usern .content-userl,
+.userl-input .usern-input .userl:valid + .label-usern .content-userl,
+.userl-input .userl:valid + .label-usern .content-userl,
+.usere-input .userl-input .userl:valid + .label-usern .content-userl,
+.userl-input .usere-input .userl:valid + .label-usern .content-userl,
+.usermsg-input .userl-input .userl:valid + .label-usern .content-userl,
+.userl-input .usermsg-input .userl:valid + .label-usern .content-userl,
+.usern-input .usere-input .usere:valid + .label-usern .content-userl,
+.usere-input .usern-input .usere:valid + .label-usern .content-userl,
+.userl-input .usere-input .usere:valid + .label-usern .content-userl,
+.usere-input .userl-input .usere:valid + .label-usern .content-userl,
+.usere-input .usere:valid + .label-usern .content-userl,
+.usermsg-input .usere-input .usere:valid + .label-usern .content-userl,
+.usere-input .usermsg-input .usere:valid + .label-usern .content-userl,
+.usern-input .usermsg-input .usermsg:valid + .label-usern .content-userl,
+.usermsg-input .usern-input .usermsg:valid + .label-usern .content-userl,
+.userl-input .usermsg-input .usermsg:valid + .label-usern .content-userl,
+.usermsg-input .userl-input .usermsg:valid + .label-usern .content-userl,
+.usere-input .usermsg-input .usermsg:valid + .label-usern .content-userl,
+.usermsg-input .usere-input .usermsg:valid + .label-usern .content-userl,
+.usermsg-input .usermsg:valid + .label-usern .content-userl,
+.usern-input .userl-input .usern:valid + .label-userl .content-userl,
+.userl-input .usern-input .usern:valid + .label-userl .content-userl,
+.userl-input .usern:valid + .label-userl .content-userl,
+.usere-input .userl-input .usern:valid + .label-userl .content-userl,
+.userl-input .usere-input .usern:valid + .label-userl .content-userl,
+.usermsg-input .userl-input .usern:valid + .label-userl .content-userl,
+.userl-input .usermsg-input .usern:valid + .label-userl .content-userl,
+.usern-input .userl-input .userl:valid + .label-userl .content-userl,
+.userl-input .usern-input .userl:valid + .label-userl .content-userl,
+.userl-input .userl:valid + .label-userl .content-userl,
+.usere-input .userl-input .userl:valid + .label-userl .content-userl,
+.userl-input .usere-input .userl:valid + .label-userl .content-userl,
+.usermsg-input .userl-input .userl:valid + .label-userl .content-userl,
+.userl-input .usermsg-input .userl:valid + .label-userl .content-userl,
+.usern-input .usere-input .userl-input .usere:valid + .label-userl .content-userl,
+.userl-input .usern-input .usere-input .usere:valid + .label-userl .content-userl,
+.usere-input .usern-input .userl-input .usere:valid + .label-userl .content-userl,
+.userl-input .usere-input .usern-input .usere:valid + .label-userl .content-userl,
+.userl-input .usere-input .usere:valid + .label-userl .content-userl,
+.usere-input .userl-input .usere:valid + .label-userl .content-userl,
+.usere-input .userl-input .usere:valid + .label-userl .content-userl,
+.userl-input .usere-input .usere:valid + .label-userl .content-userl,
+.usermsg-input .usere-input .userl-input .usere:valid + .label-userl .content-userl,
+.userl-input .usermsg-input .usere-input .usere:valid + .label-userl .content-userl,
+.usere-input .usermsg-input .userl-input .usere:valid + .label-userl .content-userl,
+.userl-input .usere-input .usermsg-input .usere:valid + .label-userl .content-userl,
+.usern-input .usermsg-input .userl-input .usermsg:valid + .label-userl .content-userl,
+.userl-input .usern-input .usermsg-input .usermsg:valid + .label-userl .content-userl,
+.usermsg-input .usern-input .userl-input .usermsg:valid + .label-userl .content-userl,
+.userl-input .usermsg-input .usern-input .usermsg:valid + .label-userl .content-userl,
+.userl-input .usermsg-input .usermsg:valid + .label-userl .content-userl,
+.usermsg-input .userl-input .usermsg:valid + .label-userl .content-userl,
+.usere-input .usermsg-input .userl-input .usermsg:valid + .label-userl .content-userl,
+.userl-input .usere-input .usermsg-input .usermsg:valid + .label-userl .content-userl,
+.usermsg-input .usere-input .userl-input .usermsg:valid + .label-userl .content-userl,
+.userl-input .usermsg-input .usere-input .usermsg:valid + .label-userl .content-userl,
+.usermsg-input .userl-input .usermsg:valid + .label-userl .content-userl,
+.userl-input .usermsg-input .usermsg:valid + .label-userl .content-userl,
+.usern-input .usere-input .usern:valid + .label-usere .content-userl,
+.usere-input .usern-input .usern:valid + .label-usere .content-userl,
+.userl-input .usere-input .usern:valid + .label-usere .content-userl,
+.usere-input .userl-input .usern:valid + .label-usere .content-userl,
+.usere-input .usern:valid + .label-usere .content-userl,
+.usermsg-input .usere-input .usern:valid + .label-usere .content-userl,
+.usere-input .usermsg-input .usern:valid + .label-usere .content-userl,
+.usern-input .userl-input .usere-input .userl:valid + .label-usere .content-userl,
+.usere-input .usern-input .userl-input .userl:valid + .label-usere .content-userl,
+.userl-input .usern-input .usere-input .userl:valid + .label-usere .content-userl,
+.usere-input .userl-input .usern-input .userl:valid + .label-usere .content-userl,
+.userl-input .usere-input .userl:valid + .label-usere .content-userl,
+.usere-input .userl-input .userl:valid + .label-usere .content-userl,
+.usere-input .userl-input .userl:valid + .label-usere .content-userl,
+.userl-input .usere-input .userl:valid + .label-usere .content-userl,
+.usermsg-input .userl-input .usere-input .userl:valid + .label-usere .content-userl,
+.usere-input .usermsg-input .userl-input .userl:valid + .label-usere .content-userl,
+.userl-input .usermsg-input .usere-input .userl:valid + .label-usere .content-userl,
+.usere-input .userl-input .usermsg-input .userl:valid + .label-usere .content-userl,
+.usern-input .usere-input .usere:valid + .label-usere .content-userl,
+.usere-input .usern-input .usere:valid + .label-usere .content-userl,
+.userl-input .usere-input .usere:valid + .label-usere .content-userl,
+.usere-input .userl-input .usere:valid + .label-usere .content-userl,
+.usere-input .usere:valid + .label-usere .content-userl,
+.usermsg-input .usere-input .usere:valid + .label-usere .content-userl,
+.usere-input .usermsg-input .usere:valid + .label-usere .content-userl,
+.usern-input .usermsg-input .usere-input .usermsg:valid + .label-usere .content-userl,
+.usere-input .usern-input .usermsg-input .usermsg:valid + .label-usere .content-userl,
+.usermsg-input .usern-input .usere-input .usermsg:valid + .label-usere .content-userl,
+.usere-input .usermsg-input .usern-input .usermsg:valid + .label-usere .content-userl,
+.userl-input .usermsg-input .usere-input .usermsg:valid + .label-usere .content-userl,
+.usere-input .userl-input .usermsg-input .usermsg:valid + .label-usere .content-userl,
+.usermsg-input .userl-input .usere-input .usermsg:valid + .label-usere .content-userl,
+.usere-input .usermsg-input .userl-input .usermsg:valid + .label-usere .content-userl,
+.usere-input .usermsg-input .usermsg:valid + .label-usere .content-userl,
+.usermsg-input .usere-input .usermsg:valid + .label-usere .content-userl,
+.usermsg-input .usere-input .usermsg:valid + .label-usere .content-userl,
+.usere-input .usermsg-input .usermsg:valid + .label-usere .content-userl,
+.usern-input .usermsg-input .usern:valid + .label-usermsg .content-userl,
+.usermsg-input .usern-input .usern:valid + .label-usermsg .content-userl,
+.userl-input .usermsg-input .usern:valid + .label-usermsg .content-userl,
+.usermsg-input .userl-input .usern:valid + .label-usermsg .content-userl,
+.usere-input .usermsg-input .usern:valid + .label-usermsg .content-userl,
+.usermsg-input .usere-input .usern:valid + .label-usermsg .content-userl,
+.usermsg-input .usern:valid + .label-usermsg .content-userl,
+.usern-input .userl-input .usermsg-input .userl:valid + .label-usermsg .content-userl,
+.usermsg-input .usern-input .userl-input .userl:valid + .label-usermsg .content-userl,
+.userl-input .usern-input .usermsg-input .userl:valid + .label-usermsg .content-userl,
+.usermsg-input .userl-input .usern-input .userl:valid + .label-usermsg .content-userl,
+.userl-input .usermsg-input .userl:valid + .label-usermsg .content-userl,
+.usermsg-input .userl-input .userl:valid + .label-usermsg .content-userl,
+.usere-input .userl-input .usermsg-input .userl:valid + .label-usermsg .content-userl,
+.usermsg-input .usere-input .userl-input .userl:valid + .label-usermsg .content-userl,
+.userl-input .usere-input .usermsg-input .userl:valid + .label-usermsg .content-userl,
+.usermsg-input .userl-input .usere-input .userl:valid + .label-usermsg .content-userl,
+.usermsg-input .userl-input .userl:valid + .label-usermsg .content-userl,
+.userl-input .usermsg-input .userl:valid + .label-usermsg .content-userl,
+.usern-input .usere-input .usermsg-input .usere:valid + .label-usermsg .content-userl,
+.usermsg-input .usern-input .usere-input .usere:valid + .label-usermsg .content-userl,
+.usere-input .usern-input .usermsg-input .usere:valid + .label-usermsg .content-userl,
+.usermsg-input .usere-input .usern-input .usere:valid + .label-usermsg .content-userl,
+.userl-input .usere-input .usermsg-input .usere:valid + .label-usermsg .content-userl,
+.usermsg-input .userl-input .usere-input .usere:valid + .label-usermsg .content-userl,
+.usere-input .userl-input .usermsg-input .usere:valid + .label-usermsg .content-userl,
+.usermsg-input .usere-input .userl-input .usere:valid + .label-usermsg .content-userl,
+.usere-input .usermsg-input .usere:valid + .label-usermsg .content-userl,
+.usermsg-input .usere-input .usere:valid + .label-usermsg .content-userl,
+.usermsg-input .usere-input .usere:valid + .label-usermsg .content-userl,
+.usere-input .usermsg-input .usere:valid + .label-usermsg .content-userl,
+.usern-input .usermsg-input .usermsg:valid + .label-usermsg .content-userl,
+.usermsg-input .usern-input .usermsg:valid + .label-usermsg .content-userl,
+.userl-input .usermsg-input .usermsg:valid + .label-usermsg .content-userl,
+.usermsg-input .userl-input .usermsg:valid + .label-usermsg .content-userl,
+.usere-input .usermsg-input .usermsg:valid + .label-usermsg .content-userl,
+.usermsg-input .usere-input .usermsg:valid + .label-usermsg .content-userl,
+.usermsg-input .usermsg:valid + .label-usermsg .content-userl,
+.usern-input .usern:valid + .label-usern .content-usere,
+.userl-input .usern:valid + .label-usern .content-usere,
+.usere-input .usern:valid + .label-usern .content-usere,
+.usermsg-input .usern:valid + .label-usern .content-usere,
+.usern-input .userl-input .userl:valid + .label-usern .content-usere,
+.userl-input .usern-input .userl:valid + .label-usern .content-usere,
+.userl-input .userl:valid + .label-usern .content-usere,
+.usere-input .userl-input .userl:valid + .label-usern .content-usere,
+.userl-input .usere-input .userl:valid + .label-usern .content-usere,
+.usermsg-input .userl-input .userl:valid + .label-usern .content-usere,
+.userl-input .usermsg-input .userl:valid + .label-usern .content-usere,
+.usern-input .usere-input .usere:valid + .label-usern .content-usere,
+.usere-input .usern-input .usere:valid + .label-usern .content-usere,
+.userl-input .usere-input .usere:valid + .label-usern .content-usere,
+.usere-input .userl-input .usere:valid + .label-usern .content-usere,
+.usere-input .usere:valid + .label-usern .content-usere,
+.usermsg-input .usere-input .usere:valid + .label-usern .content-usere,
+.usere-input .usermsg-input .usere:valid + .label-usern .content-usere,
+.usern-input .usermsg-input .usermsg:valid + .label-usern .content-usere,
+.usermsg-input .usern-input .usermsg:valid + .label-usern .content-usere,
+.userl-input .usermsg-input .usermsg:valid + .label-usern .content-usere,
+.usermsg-input .userl-input .usermsg:valid + .label-usern .content-usere,
+.usere-input .usermsg-input .usermsg:valid + .label-usern .content-usere,
+.usermsg-input .usere-input .usermsg:valid + .label-usern .content-usere,
+.usermsg-input .usermsg:valid + .label-usern .content-usere,
+.usern-input .userl-input .usern:valid + .label-userl .content-usere,
+.userl-input .usern-input .usern:valid + .label-userl .content-usere,
+.userl-input .usern:valid + .label-userl .content-usere,
+.usere-input .userl-input .usern:valid + .label-userl .content-usere,
+.userl-input .usere-input .usern:valid + .label-userl .content-usere,
+.usermsg-input .userl-input .usern:valid + .label-userl .content-usere,
+.userl-input .usermsg-input .usern:valid + .label-userl .content-usere,
+.usern-input .userl-input .userl:valid + .label-userl .content-usere,
+.userl-input .usern-input .userl:valid + .label-userl .content-usere,
+.userl-input .userl:valid + .label-userl .content-usere,
+.usere-input .userl-input .userl:valid + .label-userl .content-usere,
+.userl-input .usere-input .userl:valid + .label-userl .content-usere,
+.usermsg-input .userl-input .userl:valid + .label-userl .content-usere,
+.userl-input .usermsg-input .userl:valid + .label-userl .content-usere,
+.usern-input .usere-input .userl-input .usere:valid + .label-userl .content-usere,
+.userl-input .usern-input .usere-input .usere:valid + .label-userl .content-usere,
+.usere-input .usern-input .userl-input .usere:valid + .label-userl .content-usere,
+.userl-input .usere-input .usern-input .usere:valid + .label-userl .content-usere,
+.userl-input .usere-input .usere:valid + .label-userl .content-usere,
+.usere-input .userl-input .usere:valid + .label-userl .content-usere,
+.usere-input .userl-input .usere:valid + .label-userl .content-usere,
+.userl-input .usere-input .usere:valid + .label-userl .content-usere,
+.usermsg-input .usere-input .userl-input .usere:valid + .label-userl .content-usere,
+.userl-input .usermsg-input .usere-input .usere:valid + .label-userl .content-usere,
+.usere-input .usermsg-input .userl-input .usere:valid + .label-userl .content-usere,
+.userl-input .usere-input .usermsg-input .usere:valid + .label-userl .content-usere,
+.usern-input .usermsg-input .userl-input .usermsg:valid + .label-userl .content-usere,
+.userl-input .usern-input .usermsg-input .usermsg:valid + .label-userl .content-usere,
+.usermsg-input .usern-input .userl-input .usermsg:valid + .label-userl .content-usere,
+.userl-input .usermsg-input .usern-input .usermsg:valid + .label-userl .content-usere,
+.userl-input .usermsg-input .usermsg:valid + .label-userl .content-usere,
+.usermsg-input .userl-input .usermsg:valid + .label-userl .content-usere,
+.usere-input .usermsg-input .userl-input .usermsg:valid + .label-userl .content-usere,
+.userl-input .usere-input .usermsg-input .usermsg:valid + .label-userl .content-usere,
+.usermsg-input .usere-input .userl-input .usermsg:valid + .label-userl .content-usere,
+.userl-input .usermsg-input .usere-input .usermsg:valid + .label-userl .content-usere,
+.usermsg-input .userl-input .usermsg:valid + .label-userl .content-usere,
+.userl-input .usermsg-input .usermsg:valid + .label-userl .content-usere,
+.usern-input .usere-input .usern:valid + .label-usere .content-usere,
+.usere-input .usern-input .usern:valid + .label-usere .content-usere,
+.userl-input .usere-input .usern:valid + .label-usere .content-usere,
+.usere-input .userl-input .usern:valid + .label-usere .content-usere,
+.usere-input .usern:valid + .label-usere .content-usere,
+.usermsg-input .usere-input .usern:valid + .label-usere .content-usere,
+.usere-input .usermsg-input .usern:valid + .label-usere .content-usere,
+.usern-input .userl-input .usere-input .userl:valid + .label-usere .content-usere,
+.usere-input .usern-input .userl-input .userl:valid + .label-usere .content-usere,
+.userl-input .usern-input .usere-input .userl:valid + .label-usere .content-usere,
+.usere-input .userl-input .usern-input .userl:valid + .label-usere .content-usere,
+.userl-input .usere-input .userl:valid + .label-usere .content-usere,
+.usere-input .userl-input .userl:valid + .label-usere .content-usere,
+.usere-input .userl-input .userl:valid + .label-usere .content-usere,
+.userl-input .usere-input .userl:valid + .label-usere .content-usere,
+.usermsg-input .userl-input .usere-input .userl:valid + .label-usere .content-usere,
+.usere-input .usermsg-input .userl-input .userl:valid + .label-usere .content-usere,
+.userl-input .usermsg-input .usere-input .userl:valid + .label-usere .content-usere,
+.usere-input .userl-input .usermsg-input .userl:valid + .label-usere .content-usere,
+.usern-input .usere-input .usere:valid + .label-usere .content-usere,
+.usere-input .usern-input .usere:valid + .label-usere .content-usere,
+.userl-input .usere-input .usere:valid + .label-usere .content-usere,
+.usere-input .userl-input .usere:valid + .label-usere .content-usere,
+.usere-input .usere:valid + .label-usere .content-usere,
+.usermsg-input .usere-input .usere:valid + .label-usere .content-usere,
+.usere-input .usermsg-input .usere:valid + .label-usere .content-usere,
+.usern-input .usermsg-input .usere-input .usermsg:valid + .label-usere .content-usere,
+.usere-input .usern-input .usermsg-input .usermsg:valid + .label-usere .content-usere,
+.usermsg-input .usern-input .usere-input .usermsg:valid + .label-usere .content-usere,
+.usere-input .usermsg-input .usern-input .usermsg:valid + .label-usere .content-usere,
+.userl-input .usermsg-input .usere-input .usermsg:valid + .label-usere .content-usere,
+.usere-input .userl-input .usermsg-input .usermsg:valid + .label-usere .content-usere,
+.usermsg-input .userl-input .usere-input .usermsg:valid + .label-usere .content-usere,
+.usere-input .usermsg-input .userl-input .usermsg:valid + .label-usere .content-usere,
+.usere-input .usermsg-input .usermsg:valid + .label-usere .content-usere,
+.usermsg-input .usere-input .usermsg:valid + .label-usere .content-usere,
+.usermsg-input .usere-input .usermsg:valid + .label-usere .content-usere,
+.usere-input .usermsg-input .usermsg:valid + .label-usere .content-usere,
+.usern-input .usermsg-input .usern:valid + .label-usermsg .content-usere,
+.usermsg-input .usern-input .usern:valid + .label-usermsg .content-usere,
+.userl-input .usermsg-input .usern:valid + .label-usermsg .content-usere,
+.usermsg-input .userl-input .usern:valid + .label-usermsg .content-usere,
+.usere-input .usermsg-input .usern:valid + .label-usermsg .content-usere,
+.usermsg-input .usere-input .usern:valid + .label-usermsg .content-usere,
+.usermsg-input .usern:valid + .label-usermsg .content-usere,
+.usern-input .userl-input .usermsg-input .userl:valid + .label-usermsg .content-usere,
+.usermsg-input .usern-input .userl-input .userl:valid + .label-usermsg .content-usere,
+.userl-input .usern-input .usermsg-input .userl:valid + .label-usermsg .content-usere,
+.usermsg-input .userl-input .usern-input .userl:valid + .label-usermsg .content-usere,
+.userl-input .usermsg-input .userl:valid + .label-usermsg .content-usere,
+.usermsg-input .userl-input .userl:valid + .label-usermsg .content-usere,
+.usere-input .userl-input .usermsg-input .userl:valid + .label-usermsg .content-usere,
+.usermsg-input .usere-input .userl-input .userl:valid + .label-usermsg .content-usere,
+.userl-input .usere-input .usermsg-input .userl:valid + .label-usermsg .content-usere,
+.usermsg-input .userl-input .usere-input .userl:valid + .label-usermsg .content-usere,
+.usermsg-input .userl-input .userl:valid + .label-usermsg .content-usere,
+.userl-input .usermsg-input .userl:valid + .label-usermsg .content-usere,
+.usern-input .usere-input .usermsg-input .usere:valid + .label-usermsg .content-usere,
+.usermsg-input .usern-input .usere-input .usere:valid + .label-usermsg .content-usere,
+.usere-input .usern-input .usermsg-input .usere:valid + .label-usermsg .content-usere,
+.usermsg-input .usere-input .usern-input .usere:valid + .label-usermsg .content-usere,
+.userl-input .usere-input .usermsg-input .usere:valid + .label-usermsg .content-usere,
+.usermsg-input .userl-input .usere-input .usere:valid + .label-usermsg .content-usere,
+.usere-input .userl-input .usermsg-input .usere:valid + .label-usermsg .content-usere,
+.usermsg-input .usere-input .userl-input .usere:valid + .label-usermsg .content-usere,
+.usere-input .usermsg-input .usere:valid + .label-usermsg .content-usere,
+.usermsg-input .usere-input .usere:valid + .label-usermsg .content-usere,
+.usermsg-input .usere-input .usere:valid + .label-usermsg .content-usere,
+.usere-input .usermsg-input .usere:valid + .label-usermsg .content-usere,
+.usern-input .usermsg-input .usermsg:valid + .label-usermsg .content-usere,
+.usermsg-input .usern-input .usermsg:valid + .label-usermsg .content-usere,
+.userl-input .usermsg-input .usermsg:valid + .label-usermsg .content-usere,
+.usermsg-input .userl-input .usermsg:valid + .label-usermsg .content-usere,
+.usere-input .usermsg-input .usermsg:valid + .label-usermsg .content-usere,
+.usermsg-input .usere-input .usermsg:valid + .label-usermsg .content-usere,
+.usermsg-input .usermsg:valid + .label-usermsg .content-usere {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  font-size: 0.875rem;
+  color: #9453A6;
+}
+
+.usern-input .usern:focus + .label-usern::after, .userl-input .usern:focus + .label-usern::after, .usere-input .usern:focus + .label-usern::after, .usermsg-input .usern:focus + .label-usern::after, .userl-input .usern-input .userl:focus + .label-usern::after, .userl-input .userl:focus + .label-usern::after, .userl-input .usere-input .userl:focus + .label-usern::after, .userl-input .usermsg-input .userl:focus + .label-usern::after, .usere-input .usern-input .usere:focus + .label-usern::after, .usere-input .userl-input .usere:focus + .label-usern::after, .usere-input .usere:focus + .label-usern::after, .usere-input .usermsg-input .usere:focus + .label-usern::after, .usermsg-input .usern-input .usermsg:focus + .label-usern::after, .usermsg-input .userl-input .usermsg:focus + .label-usern::after, .usermsg-input .usere-input .usermsg:focus + .label-usern::after, .usermsg-input .usermsg:focus + .label-usern::after, .userl-input .usern-input .usern:focus + .label-userl::after, .userl-input .usern:focus + .label-userl::after, .userl-input .usere-input .usern:focus + .label-userl::after, .userl-input .usermsg-input .usern:focus + .label-userl::after, .userl-input .usern-input .userl:focus + .label-userl::after, .userl-input .userl:focus + .label-userl::after, .userl-input .usere-input .userl:focus + .label-userl::after, .userl-input .usermsg-input .userl:focus + .label-userl::after, .userl-input .usere-input .usern-input .usere:focus + .label-userl::after, .usere-input .userl-input .usere:focus + .label-userl::after, .userl-input .usere-input .usere:focus + .label-userl::after, .userl-input .usere-input .usermsg-input .usere:focus + .label-userl::after, .userl-input .usermsg-input .usern-input .usermsg:focus + .label-userl::after, .userl-input .usermsg-input .usere-input .usermsg:focus + .label-userl::after, .usermsg-input .userl-input .usermsg:focus + .label-userl::after, .userl-input .usermsg-input .usermsg:focus + .label-userl::after, .usere-input .usern-input .usern:focus + .label-usere::after, .usere-input .userl-input .usern:focus + .label-usere::after, .usere-input .usern:focus + .label-usere::after, .usere-input .usermsg-input .usern:focus + .label-usere::after, .usere-input .userl-input .usern-input .userl:focus + .label-usere::after, .usere-input .userl-input .userl:focus + .label-usere::after, .userl-input .usere-input .userl:focus + .label-usere::after, .usere-input .userl-input .usermsg-input .userl:focus + .label-usere::after, .usere-input .usern-input .usere:focus + .label-usere::after, .usere-input .userl-input .usere:focus + .label-usere::after, .usere-input .usere:focus + .label-usere::after, .usere-input .usermsg-input .usere:focus + .label-usere::after, .usere-input .usermsg-input .usern-input .usermsg:focus + .label-usere::after, .usere-input .usermsg-input .userl-input .usermsg:focus + .label-usere::after, .usermsg-input .usere-input .usermsg:focus + .label-usere::after, .usere-input .usermsg-input .usermsg:focus + .label-usere::after, .usermsg-input .usern-input .usern:focus + .label-usermsg::after, .usermsg-input .userl-input .usern:focus + .label-usermsg::after, .usermsg-input .usere-input .usern:focus + .label-usermsg::after, .usermsg-input .usern:focus + .label-usermsg::after, .usermsg-input .userl-input .usern-input .userl:focus + .label-usermsg::after, .usermsg-input .userl-input .usere-input .userl:focus + .label-usermsg::after, .usermsg-input .userl-input .userl:focus + .label-usermsg::after, .userl-input .usermsg-input .userl:focus + .label-usermsg::after, .usermsg-input .usere-input .usern-input .usere:focus + .label-usermsg::after, .usermsg-input .usere-input .userl-input .usere:focus + .label-usermsg::after, .usermsg-input .usere-input .usere:focus + .label-usermsg::after, .usere-input .usermsg-input .usere:focus + .label-usermsg::after, .usermsg-input .usern-input .usermsg:focus + .label-usermsg::after, .usermsg-input .userl-input .usermsg:focus + .label-usermsg::after, .usermsg-input .usere-input .usermsg:focus + .label-usermsg::after, .usermsg-input .usermsg:focus + .label-usermsg::after,
+.usern-input .usern:valid + .label-usern::after,
+.userl-input .usern:valid + .label-usern::after,
+.usere-input .usern:valid + .label-usern::after,
+.usermsg-input .usern:valid + .label-usern::after,
+.userl-input .usern-input .userl:valid + .label-usern::after,
+.userl-input .userl:valid + .label-usern::after,
+.userl-input .usere-input .userl:valid + .label-usern::after,
+.userl-input .usermsg-input .userl:valid + .label-usern::after,
+.usere-input .usern-input .usere:valid + .label-usern::after,
+.usere-input .userl-input .usere:valid + .label-usern::after,
+.usere-input .usere:valid + .label-usern::after,
+.usere-input .usermsg-input .usere:valid + .label-usern::after,
+.usermsg-input .usern-input .usermsg:valid + .label-usern::after,
+.usermsg-input .userl-input .usermsg:valid + .label-usern::after,
+.usermsg-input .usere-input .usermsg:valid + .label-usern::after,
+.usermsg-input .usermsg:valid + .label-usern::after,
+.userl-input .usern-input .usern:valid + .label-userl::after,
+.userl-input .usern:valid + .label-userl::after,
+.userl-input .usere-input .usern:valid + .label-userl::after,
+.userl-input .usermsg-input .usern:valid + .label-userl::after,
+.userl-input .usern-input .userl:valid + .label-userl::after,
+.userl-input .userl:valid + .label-userl::after,
+.userl-input .usere-input .userl:valid + .label-userl::after,
+.userl-input .usermsg-input .userl:valid + .label-userl::after,
+.userl-input .usere-input .usern-input .usere:valid + .label-userl::after,
+.usere-input .userl-input .usere:valid + .label-userl::after,
+.userl-input .usere-input .usere:valid + .label-userl::after,
+.userl-input .usere-input .usermsg-input .usere:valid + .label-userl::after,
+.userl-input .usermsg-input .usern-input .usermsg:valid + .label-userl::after,
+.userl-input .usermsg-input .usere-input .usermsg:valid + .label-userl::after,
+.usermsg-input .userl-input .usermsg:valid + .label-userl::after,
+.userl-input .usermsg-input .usermsg:valid + .label-userl::after,
+.usere-input .usern-input .usern:valid + .label-usere::after,
+.usere-input .userl-input .usern:valid + .label-usere::after,
+.usere-input .usern:valid + .label-usere::after,
+.usere-input .usermsg-input .usern:valid + .label-usere::after,
+.usere-input .userl-input .usern-input .userl:valid + .label-usere::after,
+.usere-input .userl-input .userl:valid + .label-usere::after,
+.userl-input .usere-input .userl:valid + .label-usere::after,
+.usere-input .userl-input .usermsg-input .userl:valid + .label-usere::after,
+.usere-input .usern-input .usere:valid + .label-usere::after,
+.usere-input .userl-input .usere:valid + .label-usere::after,
+.usere-input .usere:valid + .label-usere::after,
+.usere-input .usermsg-input .usere:valid + .label-usere::after,
+.usere-input .usermsg-input .usern-input .usermsg:valid + .label-usere::after,
+.usere-input .usermsg-input .userl-input .usermsg:valid + .label-usere::after,
+.usermsg-input .usere-input .usermsg:valid + .label-usere::after,
+.usere-input .usermsg-input .usermsg:valid + .label-usere::after,
+.usermsg-input .usern-input .usern:valid + .label-usermsg::after,
+.usermsg-input .userl-input .usern:valid + .label-usermsg::after,
+.usermsg-input .usere-input .usern:valid + .label-usermsg::after,
+.usermsg-input .usern:valid + .label-usermsg::after,
+.usermsg-input .userl-input .usern-input .userl:valid + .label-usermsg::after,
+.usermsg-input .userl-input .usere-input .userl:valid + .label-usermsg::after,
+.usermsg-input .userl-input .userl:valid + .label-usermsg::after,
+.userl-input .usermsg-input .userl:valid + .label-usermsg::after,
+.usermsg-input .usere-input .usern-input .usere:valid + .label-usermsg::after,
+.usermsg-input .usere-input .userl-input .usere:valid + .label-usermsg::after,
+.usermsg-input .usere-input .usere:valid + .label-usermsg::after,
+.usere-input .usermsg-input .usere:valid + .label-usermsg::after,
+.usermsg-input .usern-input .usermsg:valid + .label-usermsg::after,
+.usermsg-input .userl-input .usermsg:valid + .label-usermsg::after,
+.usermsg-input .usere-input .usermsg:valid + .label-usermsg::after,
+.usermsg-input .usermsg:valid + .label-usermsg::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.userl-input .label-userl::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #F2CC0F;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.userl-input .userl:focus + .label-userl .content-userl,
+.userl-input .userl:valid + .label-userl .content-userl {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  font-size: 0.875rem;
+  color: #F2CC0F;
+}
+
+.usere-input .label-usere::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #8CBF3F;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.usere-input .usere:focus + .label-usere .content-usere,
+.usere-input .usere:valid + .label-usere .content-usere {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  font-size: 0.875rem;
+  color: #8CBF3F;
+}
+
+.usermsg-input {
+  height: 50vh;
+}
+
+.usermsg-input .usermsg {
+  line-height: 1.5;
+}
+
+.usermsg-input .label-usermsg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;css
+  width: 100%;
+  border-bottom: 3px solid royalblue;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.content-usermsg {
+  position: absolute;
+  bottom: 335px;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.usermsg-input .usermsg:focus + .label-usermsg .content-usermsg,
+.usermsg-input .usermsg:valid + .label-usermsg .content-usermsg {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  font-size: 0.875rem;
+  color: royalblue;
+}
+/*# sourceMappingURL=contactStyle.css.map */

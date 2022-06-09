@@ -1,0 +1,141 @@
+@import "setup";
+@import "navigator";
+@import "footer";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+main h1 {
+    font-family: $HeadingfontHP;
+    text-align: center;
+    color: #800000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+main a {
+    color: $Dcolor;
+}
+
+main a:hover {
+    color: yellowgreen;
+}
+
+.accordion {
+    max-width: 960px;
+    margin-left: 200px;
+    border: 2px solid $Dcolor;
+    background-color: rgba(242, 204, 15, 0.5);
+    margin-bottom: 30px;
+}
+
+.intro {
+    text-align: justify;
+    font-family: $TextfontR;
+    margin-bottom: 30px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+    color: $Dcolor;
+    font-family: $TextfontR;
+    text-align: justify;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    background-color: $Pcolor;
+    color: $Lcolor;
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    color: $Gcolor;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+    color: $Ycolor;
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background-color: beige;
+    color: $Dcolor;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    line-height: 1.5;
+}
+
+.accordion .contentBx.active .content {
+    height: 160px;
+    padding: 30px;
+}
+
+@media (max-width: 1199.98px) {
+    main {
+        margin-top: 130px;
+        margin-left: -95px !important;
+        max-width: 1024px !important;
+    }
+
+    .accordion .contentBx .label {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 768.98px) {
+    .accordion .contentBx .label {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .accordion {
+        width: 90vw;
+        margin-left: 100px;
+    }
+
+    .accordion .contentBx .label {
+        font-size: 0.7rem;
+        padding: 40px;
+    }
+
+    .accordion .contentBx .content {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 280.98px) {
+    .accordion {
+        width: 90vw;
+        margin-left: 95px;
+    }
+
+    .accordion .contentBx .label {
+        font-size: 0.55rem;
+    }
+
+    .accordion .contentBx .content {
+        font-size: 0.5rem;
+    }
+}

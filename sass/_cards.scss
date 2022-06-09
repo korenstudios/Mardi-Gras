@@ -1,0 +1,118 @@
+div.custom-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+div.containher {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.containher .card {
+    position: relative;
+    max-width: 300px;
+    height: 245px;
+    background-color: $Pcolor;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.containher .card::-webkit-scrollbar {
+    display: none;
+}
+
+.containher .card:hover {
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.containher .card .imgBx {
+    position: relative;
+    width: 225px;
+    top: -60px;
+    left: 25px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.containher .card .imgBx img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.containher .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: $Dcolor;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.containher .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.cards-links {
+    text-decoration: none;
+    color: $Lcolor;
+    border: 2px $Gcolor solid;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    display: inline-block;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.cards-links:hover {
+    background-color: $Gcolor;
+    color: $Lcolor;
+    font-family: $TextfontR;
+    font-weight: bold;
+}
+
+p.cards-t {
+    font-family: $TextfontR;
+    color: $Lcolor;
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.cards-h {
+    font-family: $HeadingfontP;
+    color: $Ycolor;
+}
+
+@media (max-width: 767.98px) {
+    .containher .card {
+        width: 255px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .containher .card .imgBx {
+        left: 0;
+    }
+}
